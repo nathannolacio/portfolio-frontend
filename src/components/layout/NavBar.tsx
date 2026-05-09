@@ -16,7 +16,7 @@ export default function NavBar() {
 
         syncFromHash();
         window.addEventListener("hashchange", syncFromHash);
-        
+
         return () => {window.removeEventListener("hashchange", syncFromHash);}
     }, []);
 
@@ -56,13 +56,19 @@ export default function NavBar() {
             </nav>
             <nav className='md:hidden w-full flex flex-col my-4 items-end gap-4'>
                 <button 
+                    aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+                    aria-expanded={isMenuOpen}
+                    aria-controls='mobile-navigation-menu'
                     className='hover:cursor-pointer'
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                 >
                     {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
                 </button>
                 {isMenuOpen && (
-                    <ul className='flex flex-col gap-2 font-semibold'>
+                    <ul 
+                        id='mobile-navigation-menu' 
+                        className='flex flex-col gap-2 font-semibold'
+                    >
                         {renderNavItems()}
                     </ul>
                 )}

@@ -27,7 +27,6 @@ export default function Header() {
         <Container className="flex justify-between">
             <Logo 
                 setActiveSection={setActiveSection}
-                color="black" 
             />
             <NavBar
                 activeSection={activeSection}

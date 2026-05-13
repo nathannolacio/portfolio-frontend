@@ -4,10 +4,9 @@ import Link from "next/link";
 
 type LogoProps = {
     setActiveSection: (section: string) => void;
-    color: string;
 }
 
-export default function Logo({ setActiveSection, color }: LogoProps) {
+export default function Logo({ setActiveSection }: LogoProps) {
     return(
         <Link
             href="#home"

@@ -26,7 +26,7 @@ export default function RootLayout({
       lang="en"
       className={"h-full antialiased"}
     >
-      <body className={`${geist.className} ${spaceGrotesk.className} min-h-screen flex flex-col bg-zinc-200 text-zinc-800`}>{children}</body>
+      <body className={`${geist.className} ${spaceGrotesk.variable} min-h-screen flex flex-col bg-zinc-200 text-zinc-800`}>{children}</body>
     </html>
   );
 }

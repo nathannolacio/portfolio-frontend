@@ -4,9 +4,7 @@ import Header from "../components/header/Header";
 export default function Home() {
   return (
     <main>
-      <Container>
-        <Header />
-      </Container>
+      <Header />
       <section id="home">
         <Container>
           <h2>Home</h2>

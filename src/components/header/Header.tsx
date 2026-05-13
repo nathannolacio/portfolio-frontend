@@ -21,8 +21,6 @@ export default function Header() {
         return () => {window.removeEventListener("hashchange", syncFromHash);}
     }, []);
 
-    console.log(setActiveSection);
-
     return(
         <Container className="flex justify-between">
             <Logo 

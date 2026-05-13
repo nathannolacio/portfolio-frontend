@@ -4,10 +4,11 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import NavigationLinks from "../navigation/NavigationLinks";
 
 type FooterProps = {
+    activeSection: string;
     setActiveSection: (section: string) => void;
 };
 
-export default function Footer({ setActiveSection }: FooterProps) {
+export default function Footer({ activeSection, setActiveSection }: FooterProps) {
     return(
         <footer className="bg-zinc-300 py-10">
             <Container className="flex flex-col gap-10 md:flex-row md:justify-between">
@@ -43,6 +44,7 @@ export default function Footer({ setActiveSection }: FooterProps) {
                 </div>
                 <nav className="order-1 md:order-2 flex flex-col">
                     <NavigationLinks
+                        activeSection={activeSection}
                         setActiveSection={setActiveSection}
                         listClassName="flex flex-col gap-4 font-semibold items-center justify-center h-full md:items-end "
                         linkClassName="hover:text-lime-600 transition-colors duration-500"

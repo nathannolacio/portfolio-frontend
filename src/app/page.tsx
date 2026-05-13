@@ -1,12 +1,10 @@
 import Container from "../components/layout/Container";
-import NavBar from "../components/layout/NavBar";
+import Header from "../components/header/Header";
 
 export default function Home() {
   return (
     <main>
-      <Container>
-        <NavBar />
-      </Container>
+      <Header />
       <section id="home">
         <Container>
           <h2>Home</h2>

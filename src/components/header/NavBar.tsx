@@ -1,25 +1,16 @@
 "use client";
 
-import Link from 'next/link';
-import { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import Link from 'next/link';
 
-export default function NavBar() {
-    const [activeSection, setActiveSection] = useState("home");
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-   
-    useEffect(() => {
-        const syncFromHash = () => {
-            const section = window.location.hash.replace("#", "") || "home";
-            setActiveSection(section);
-        };
+type NavBarProps = {
+    activeSection: string;
+    setActiveSection: (section: string) => void;
+    setIsMenuOpen: (isOpen: boolean) => void;
+    isMenuOpen: boolean;
+}
 
-        syncFromHash();
-        window.addEventListener("hashchange", syncFromHash);
-
-        return () => {window.removeEventListener("hashchange", syncFromHash);}
-    }, []);
-
+export default function NavBar({ activeSection, setActiveSection, setIsMenuOpen, isMenuOpen }: NavBarProps) {
     const navItems = [
         { label: "Home", href: "#home", section: "home" },
         { label: "About", href: "#about", section: "about" },
@@ -27,7 +18,7 @@ export default function NavBar() {
         { label: "Contact", href: "#contact", section: "contact" }
     ]
 
-    const renderNavItems = () => {
+    function renderNavItems() {
         return navItems.map(item => (
             <li key={item.href}>
                 <Link 

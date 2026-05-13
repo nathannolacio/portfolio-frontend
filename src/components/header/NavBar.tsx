@@ -37,7 +37,7 @@ export default function NavBar({ activeSection, setActiveSection }: NavBarProps)
                 </button>
 
                 {isMenuOpen && (
-                   <div>
+                   <div id='mobile-navigation-menu'>
                         <NavigationLinks
                             activeSection={activeSection}
                             setActiveSection={setActiveSection}

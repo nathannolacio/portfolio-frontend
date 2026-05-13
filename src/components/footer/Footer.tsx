@@ -42,7 +42,10 @@ export default function Footer({ activeSection, setActiveSection }: FooterProps)
                     <p className="font-semibold text-sm text-center md:text-left">&copy;{new Date().getFullYear()} Nathan Nolacio. All rights reserved.</p>
                     
                 </div>
-                <nav className="order-1 md:order-2 flex flex-col">
+                <nav 
+                    className="order-1 md:order-2 flex flex-col"
+                    aria-label="Footer navigation"
+                >
                     <NavigationLinks
                         activeSection={activeSection}
                         setActiveSection={setActiveSection}

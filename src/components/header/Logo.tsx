@@ -3,18 +3,29 @@
 import Link from "next/link";
 
 type LogoProps = {
-    setActiveSectionAction: (section: string) => void;
+    setActiveSectionAction?: (section: string) => void;
+    clickable?: boolean;
 }
 
-export default function Logo({ setActiveSectionAction }: LogoProps) {
-    return(
-        <Link
-            href="#home"
-            className="font-(--font-space-grotesk) font-bold text-3xl tracking-tight transition-colors duration-300 hover:cursor-pointer hover:opacity-90"
-            onClick={() => setActiveSectionAction("home")}
-        >
+export default function Logo({ setActiveSectionAction, clickable = false }: LogoProps) {
+    const content = (
+        <div className="font-(--font-space-grotesk) font-bold text-3xl tracking-tight">
             <span>Nathan</span>
             <span className="text-lime-600">.dev</span>
+        </div>
+    )
+
+    if (clickable) {
+        return (
+            <Link
+            href="#home"
+            onClick={() => setActiveSectionAction?.("home")}
+            className="hover:cursor-pointer hover:opacity-90"
+        >
+            {content}
         </Link>
-    );
+        )
+    }
+
+    return(content);
 }

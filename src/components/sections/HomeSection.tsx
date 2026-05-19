@@ -47,15 +47,20 @@ export default function HomeSection() {
                             color="cyan"
                             variant="outline"
                             className="md:order-2"
+                            
                         >
-                            Download CV
+                            <a href="/CV_NathanNolacio_TI_Geral.pdf" target="_blank" rel="noopener noreferrer">
+                                Download CV
+                            </a>
                         </Button>
                         <Button
                             color="cyan"
                             variant="primary"
                             className="md:order-1"
                         >
-                            {`Let's talk!`}
+                            <a href="#contact">
+                                {`Let's talk!`}
+                            </a>
                         </Button>
                     </div>
                 </div>

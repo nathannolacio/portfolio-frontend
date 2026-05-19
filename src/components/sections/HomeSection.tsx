@@ -4,7 +4,7 @@ import Button from "../ui/Button";
 
 export default function HomeSection() {
     return (
-        <section className="min-h-svh overflow-x-hidden">
+        <section id="home" className="min-h-svh overflow-x-hidden">
             <Container className="h-full flex flex-col md:flex-row gap-10 md:py-12 justify-center items-center md:items-start md:justify-between">
                 <div className="md:order-2 flex items-center justify-center bg-zinc-800/20 rounded-b-full pt-10 md:pt-45 md:-translate-y-12">
 

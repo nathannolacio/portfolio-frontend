@@ -3,7 +3,7 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
-import NavigationLinks from '../navigation/NavigationLinks';
+import NavigationLinks from '../../navigation/NavigationLinks';
 
 type NavBarProps = {
     activeSection?: string;

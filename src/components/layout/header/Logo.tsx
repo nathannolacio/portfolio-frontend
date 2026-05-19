@@ -10,7 +10,7 @@ type LogoProps = {
 export default function Logo({ setActiveSectionAction, clickable = false }: LogoProps) {
     const content = (
         <div className="font-(--font-space-grotesk) font-bold text-3xl tracking-tight">
-            <span>Nathan</span>
+            <span>Nolacio</span>
             <span className="text-lime-600">.dev</span>
         </div>
     )

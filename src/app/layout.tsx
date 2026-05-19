@@ -12,8 +12,8 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Nathan Nolacio | Fullstack Developer",
-  description: "Fullstack developer portfolio built with Next.js and Tailwind CSS.",
+  title: "Nathan Nolacio | Software Developer",
+  description: "Software developer portfolio built with Next.js and Tailwind CSS.",
 };
 
 export default function RootLayout({
@@ -26,7 +26,7 @@ export default function RootLayout({
       lang="en"
       className={"h-full antialiased"}
     >
-      <body className={`${geist.className} ${spaceGrotesk.variable} min-h-screen flex flex-col bg-zinc-200 text-zinc-800`}>{children}</body>
+      <body className={`${geist.className} ${spaceGrotesk.variable} min-h-screen flex flex-col bg-neutral-50 text-zinc-800`}>{children}</body>
     </html>
   );
 }

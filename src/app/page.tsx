@@ -1,8 +1,9 @@
 "use client";
 import Container from "../components/layout/Container";
-import Header from "../components/header/Header";
-import Footer from "../components/footer/Footer";
+import Header from "../components/layout/header/Header";
+import Footer from "../components/layout/footer/Footer";
 import { useEffect, useState } from "react";
+import HomeSection from "../components/sections/HomeSection";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("home");
@@ -25,12 +26,8 @@ export default function Home() {
         activeSection={activeSection}
         setActiveSection={setActiveSection}
       />
-      <main className="flex-1">
-        <section id="home">
-          <Container>
-            <h2>Home</h2>
-          </Container>
-        </section>
+      <main className="flex flex-col">
+       <HomeSection />
         <section id="about">
           <Container>
             <h2>About</h2>

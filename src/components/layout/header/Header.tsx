@@ -1,6 +1,6 @@
 "use client";
 
-import Container from "../layout/Container";
+import Container from "../Container";
 import Logo from "./Logo";
 import NavBar from "./NavBar";
 

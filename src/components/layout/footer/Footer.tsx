@@ -1,16 +1,15 @@
 import Logo from "../header/Logo";
-import Container from "../layout/Container";
+import Container from "../Container";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import NavigationLinks from "../navigation/NavigationLinks";
+import NavigationLinks from "../../navigation/NavigationLinks";
 
 type FooterProps = {
-    activeSection: string;
     setActiveSection: (section: string) => void;
 };
 
-export default function Footer({ activeSection, setActiveSection }: FooterProps) {
+export default function Footer({ setActiveSection }: FooterProps) {
     return(
-        <footer className="bg-zinc-300 py-10">
+        <footer className="bg-neutral-200 py-10">
             <Container className="flex flex-col gap-10 md:flex-row md:justify-between">
 
                 <div className="order-2 md:order-1 flex flex-col gap-6 items-center md:items-start">
@@ -47,7 +46,6 @@ export default function Footer({ activeSection, setActiveSection }: FooterProps)
                     aria-label="Footer navigation"
                 >
                     <NavigationLinks
-                        activeSection={activeSection}
                         setActiveSection={setActiveSection}
                         listClassName="flex flex-col gap-4 font-semibold items-center justify-center h-full md:items-end "
                         linkClassName="hover:text-lime-600 transition-colors duration-500"

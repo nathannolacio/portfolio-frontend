@@ -115,10 +115,10 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-end">
                 {project.liveUrl ? (
-                    <Button color="cyan" onClick={() => window.open(project.liveUrl, "_blank")}>Live Demo</Button>
+                    <Button color="cyan" onClick={() => window.open(project.liveUrl, "_blank", "noopener,noreferrer")}>Live Demo</Button>
                 ) : null}
                 {project.githubUrl ? (
-                    <Button variant="outline" onClick={() => window.open(project.githubUrl, "_blank")}>GitHub</Button>
+                    <Button variant="outline" onClick={() => window.open(project.githubUrl, "_blank", "noopener,noreferrer")}>GitHub</Button>
                 ) : null}
             </div>
         </div>

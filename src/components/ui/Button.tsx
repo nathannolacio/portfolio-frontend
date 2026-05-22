@@ -7,10 +7,13 @@ type  ButtonProps = {
     className?: string;
     type?: "button" | "submit" | "reset";
     size?: "sm" | "md" | "lg";
+    href?: string;
+    target?: string;
+    rel?: string;
     onClick?: React.MouseEventHandler<HTMLButtonElement>
 };
 
-export default function Button({ children, color = "zinc", variant = "primary", className, onClick, type = "button", size = "md" }: ButtonProps) {
+export default function Button({ children, color = "zinc", variant = "primary", className, onClick, type = "button", size = "md", href, target, rel }: ButtonProps) {
 
     const baseStyles =  "flex items-center justify-center rounded-lg transition-colors duration-500 ease-in-out hover:cursor-pointer font-medium focus:ring-2 focus:ring-offset-2 focus:outline-none";
 
@@ -38,13 +41,26 @@ export default function Button({ children, color = "zinc", variant = "primary", 
         }
     }
 
-    return(
-        <button 
-            className={`${baseStyles} ${sizeStyles[size]} ${colorStyles[color][variant]} ${className}`}
-            onClick={onClick}
-            type={type}
-        >
-            {children}
-        </button>   
-    );
+    if (href) {
+        return (
+            <a
+                href={href}
+                target={target}
+                rel={rel}
+                className={`${baseStyles} ${sizeStyles[size]} ${colorStyles[color][variant]} ${className}`}
+            >
+                {children}
+            </a>
+        )
+    } else {
+        return(
+            <button 
+                className={`${baseStyles} ${sizeStyles[size]} ${colorStyles[color][variant]} ${className}`}
+                onClick={onClick}
+                type={type}
+                >
+                {children}
+            </button>   
+        );
+    }
 }

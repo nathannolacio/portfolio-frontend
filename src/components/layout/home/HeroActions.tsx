@@ -7,20 +7,19 @@ export default function HeroActions() {
                 color="cyan"
                 variant="outline"
                 className="md:order-2"
-                
+                href="/CV_NathanNolacio_TI_Geral.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
             >
-                <a href="/CV_NathanNolacio_TI_Geral.pdf" target="_blank" rel="noopener noreferrer">
-                    Download CV
-                </a>
+                Download CV
             </Button>
             <Button
                 color="cyan"
                 variant="primary"
                 className="md:order-1"
+                href="#contact"
             >
-                <a href="#contact">
-                    {`Let's talk!`}
-                </a>
+                {`Let's talk!`}
             </Button>
         </div>
     );

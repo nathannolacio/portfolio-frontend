@@ -10,7 +10,7 @@ type  ButtonProps = {
     href?: string;
     target?: string;
     rel?: string;
-    onClick?: React.MouseEventHandler<HTMLButtonElement>
+    onClick?: React.MouseEventHandler<HTMLElement>
 };
 
 export default function Button({ children, color = "zinc", variant = "primary", className, onClick, type = "button", size = "md", href, target, rel }: ButtonProps) {
@@ -48,6 +48,7 @@ export default function Button({ children, color = "zinc", variant = "primary", 
                 target={target}
                 rel={rel}
                 className={`${baseStyles} ${sizeStyles[size]} ${colorStyles[color][variant]} ${className}`}
+                onClick={onClick}
             >
                 {children}
             </a>

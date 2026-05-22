@@ -16,11 +16,15 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-zinc-800/80 p-4">
         <div className="relative flex flex-col gap-6 w-full max-w-6xl max-h-[calc(100vh-4rem)] overflow-y-auto rounded-3xl bg-neutral-50 p-8">
 
-            <IoIosClose 
+            <Button 
+                variant="ghost"
+                size="sm"
+                className="absolute right-4 top-4 rounded-full"
                 onClick={onClose}
-                size={32}
-                className="absolute right-4 top-4 cursor-pointer text-zinc-600"
-            />
+                aria-label="Close modal"
+            >
+                <IoIosClose size={32} />
+            </Button>
 
             <div className="flex flex-col gap-4 sm:flex-row items-center justify-between">
                 <div className="flex flex-col items-center md:flex-row gap-6">

@@ -7,7 +7,7 @@ type StatusProps = {
 export default function Badge({ icon, text, className }: StatusProps) {
     return (
         <div 
-            className={`inline-flex items-center justify-center gap-2 rounded-full border px-3 py-1 text-xs font-semibold tracking-wide ${className}`}
+            className={`inline-flex items-center justify-center gap-2 rounded-full border px-3 py-1 text-xs font-semibold tracking-wide ${className ?? ""}`}
         >
             {icon}
             <span>

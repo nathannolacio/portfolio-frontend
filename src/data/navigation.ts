@@ -5,14 +5,14 @@ export const navItems = [
             section: "home" 
         },
         { 
-            label: "Projects", 
-            href: "#projects", 
-            section: "projects" 
-        },
-        { 
             label: "About", 
             href: "#about", 
             section: "about"
+        },
+        { 
+            label: "Projects", 
+            href: "#projects", 
+            section: "projects" 
         },
         { 
             label: "Contact", 

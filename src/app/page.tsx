@@ -5,6 +5,7 @@ import Footer from "../components/layout/footer/Footer";
 import { useEffect, useState } from "react";
 import HomeSection from "../components/sections/HomeSection";
 import ProjectsSection from "../components/sections/ProjectsSection";
+import AboutSection from "../components/sections/AboutSection";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("home");
@@ -29,12 +30,8 @@ export default function Home() {
       />
       <main className="flex flex-col">
        <HomeSection />
+       <AboutSection />
        <ProjectsSection />
-        <section id="about">
-          <Container>
-            <h2>About</h2>
-          </Container>
-        </section>
         <section id="contact">
           <Container>
             <h2>Contact</h2>

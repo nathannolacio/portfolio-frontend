@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import HomeSection from "../components/sections/HomeSection";
 import ProjectsSection from "../components/sections/ProjectsSection";
 import AboutSection from "../components/sections/AboutSection";
+import ContactSection from "../components/sections/ContactSection";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("home");
@@ -29,14 +30,10 @@ export default function Home() {
         setActiveSection={setActiveSection}
       />
       <main className="flex flex-col">
-       <HomeSection />
-       <AboutSection />
-       <ProjectsSection />
-        <section id="contact">
-          <Container>
-            <h2>Contact</h2>
-          </Container>
-        </section>
+        <HomeSection />
+        <AboutSection />
+        <ProjectsSection />
+        <ContactSection />
       </main>
       <Footer
         setActiveSection={setActiveSection}

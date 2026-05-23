@@ -2,7 +2,7 @@
 
 Frontend application for my personal developer portfolio.
 
-This project was built to showcase my projects, technical skills, and fullstack development capabilities using modern web technologies.
+Designed and developed to showcase real-world projects while applying modern frontend architecture, reusable components, and clean UI/UX principles.
 
 ---
 
@@ -12,30 +12,16 @@ This project was built to showcase my projects, technical skills, and fullstack 
 - TypeScript
 - TailwindCSS
 - React
-- Responsive Design
-
----
-
-## 📁 Project Structure
-
-```bash
-src/
-├── app/
-├── components/
-├── services/
-├── types/
-└── styles/
-```
 
 ---
 
 ## ✨ Features
 
-### Public Pages
-- Home
-- About
-- Projects
-- Contact
+### Current Features
+- Responsive hero section
+- About section
+- Projects section
+- Contact section
 
 ### Future Features
 - Admin Dashboard (CMS)
@@ -51,9 +37,9 @@ src/
 This project aims to:
 
 - Build a professional portfolio
-- Practice fullstack architecture
+- Practice scalable fullstack architecture
 - Improve frontend development skills
-- Apply clean UI/UX concepts
+- Apply clean UI/UX principles
 - Integrate with a Spring Boot backend API
 
 ---
@@ -73,7 +59,7 @@ portfolio-backend
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/portfolio-frontend.git
+git clone https://github.com/nathannolacio/portfolio-frontend.git
 ```
 
 Install dependencies:

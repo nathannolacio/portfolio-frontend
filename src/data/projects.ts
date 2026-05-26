@@ -68,7 +68,6 @@ export const projects: Project[] = [
     ],
     status: "In Progress",
     githubUrl: "https://github.com/meu-saldo",
-    liveUrl: "https://your-portfolio-domain.com"
   },
   {
     id: 2,

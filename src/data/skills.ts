@@ -1,9 +1,8 @@
-import { PackageIcon } from "lucide-react";
 import type { IconType } from "react-icons";
-import { FaReact, FaNodeJs, FaPython, FaDocker, FaGitAlt, FaVial, FaJava, FaAws } from "react-icons/fa";
-import { SiNextdotjs, SiTypescript, SiTailwindcss, SiExpress, SiPostgresql, SiMongodb, SiFigma, SiWebpack, SiSpringboot, SiMysql, SiJavascript, SiSpringsecurity, SiApachemaven, SiGithubactions } from "react-icons/si";
+import { FaReact, FaDocker, FaGitAlt, FaJava, FaAws } from "react-icons/fa";
+import { SiNextdotjs, SiTypescript, SiTailwindcss, SiPostgresql, SiSpringboot, SiMysql, SiJavascript, SiSpringsecurity, SiApachemaven, SiGithubactions } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
-import { VscAzure } from "react-icons/vsc";
+import { VscAzure } from "react-icons/vsc"; 
 
 type SkillData = {
   name: string;

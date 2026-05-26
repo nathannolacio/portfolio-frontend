@@ -48,7 +48,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                 {/* Overview + Technologies block  */}
                 <div className="flex flex-col gap-8 rounded-3xl border border-zinc-200 p-4 shadow-sm">
                     
-                    <div className="relative h-56 overflow-hidden rounded-3xl bg-zinc-100">
+                    <div className="relative h-56 overflow-hidden rounded-3xl bg-zinc-100 border border-zinc-200">
                         {project.preview ? (
                             <Image src={project.preview} alt={project.title} fill className="object-cover" />
                         ) : (
@@ -103,8 +103,8 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                             <h4 className="text-sm font-semibold text-slate-900 uppercase tracking-[0.18em]">Images</h4>
                             <div className="mt-4 grid gap-4 sm:grid-cols-2">
                                 {project.images.map((image) => (
-                                    <div key={image} className="relative h-40 overflow-hidden rounded-2xl bg-zinc-100">
-                                        <Image src={image} alt={`${project.title} image`} fill className="object-cover" />
+                                    <div key={image.id} className="relative h-40 overflow-hidden rounded-2xl bg-zinc-100">
+                                        <Image src={image.src} alt={`${project.title} image`} fill className="object-cover" />
                                     </div>
                                 ))}
                             </div>

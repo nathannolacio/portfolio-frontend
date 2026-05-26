@@ -2,6 +2,7 @@ import Container from "../layout/Container";
 import SectionTitle from "../ui/typography/SectionTitle";
 import SkillCard from "../ui/SkillCard";
 import { skillGroups } from "../../data/skills";
+import Image from "next/image";
 
 export default function AboutSection() {
     return (
@@ -21,21 +22,23 @@ export default function AboutSection() {
 
                 <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-12">
                     <div className="flex justify-center items-start md:order-2">
-                        <div className="w-56 h-56 rounded-full bg-linear-to-br from-zinc-200 to-zinc-300 flex items-center justify-center shadow-md">
-                            <div className="text-zinc-400 text-6xl font-light">👤</div>
+                        <div className="relative w-56 h-56 rounded-full overflow-hidden shadow-md">
+                            <Image
+                                src="/foto-perfil.jpeg"
+                                alt="Profile photo"
+                                fill
+                                className="object-cover"
+                            />
                         </div>
                     </div>
 
                     <div className="flex flex-col gap-2 md:order-1">
                         <h3 className="text-lg font-semibold text-zinc-800 mb-2">Who I am</h3>
-                        <p className="text-zinc-600 leading-7">
-                            {`I'm a full-stack developer with a passion for creating intuitive, performant web applications.`}
-                            {`With experience across modern JavaScript frameworks and design systems, I bridge the gap between 
-                            design and engineering to deliver solutions that matter.`}
+                        <p className="text-lg text-zinc-800 leading-7">
+                            {`I’m a Full Stack Developer focused on building real-world solutions through technology. I enjoy creating scalable and user-focused applications, turning ideas into practical and efficient products.`}
                         </p>
-                        <p className="text-zinc-600 leading-7">
-                            {`When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, 
-                            or sharing knowledge with the developer community.`}
+                        <p className="text-lg text-zinc-800 leading-7">
+                            {`With experience across both backend and frontend technologies, I’m able to develop complete end-to-end applications, from system architecture and APIs to responsive interfaces and user experience.`}
                         </p>
                     </div>
                 </div>

@@ -29,7 +29,7 @@ export default function ProjectCard({
             <StatusBadge status={status} />
         </div>
         
-        <div className="relative flex items-center justify-center h-42 bg-zinc-200 rounded-md overflow-hidden">
+        <div className="relative flex items-center justify-center h-42 bg-zinc-200 rounded-md overflow-hidden border border-zinc-200">
             {preview ? (
                 <Image src={preview} alt={title} fill className="object-cover" />
                 ) : (

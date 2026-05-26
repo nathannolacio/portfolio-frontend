@@ -1,6 +1,8 @@
 import type { IconType } from "react-icons";
-import { FaReact, FaNodeJs, FaPython, FaDocker, FaGitAlt, FaVial } from "react-icons/fa";
-import { SiNextdotjs, SiTypescript, SiTailwindcss, SiVuedotjs, SiExpress, SiPostgresql, SiMongodb, SiFigma, SiWebpack } from "react-icons/si";
+import { FaReact, FaDocker, FaGitAlt, FaJava, FaAws } from "react-icons/fa";
+import { SiNextdotjs, SiTypescript, SiTailwindcss, SiPostgresql, SiSpringboot, SiMysql, SiJavascript, SiSpringsecurity, SiApachemaven, SiGithubactions } from "react-icons/si";
+import { TbApi } from "react-icons/tb";
+import { VscAzure } from "react-icons/vsc"; 
 
 type SkillData = {
   name: string;
@@ -16,31 +18,33 @@ export const skillGroups: SkillGroup[] = [
   {
     title: "Frontend",
     skills: [
+      { name: "JavaScript", icon: SiJavascript },
+      { name: "TypeScript", icon: SiTypescript },
       { name: "React", icon: FaReact },
       { name: "Next.js", icon: SiNextdotjs },
-      { name: "TypeScript", icon: SiTypescript },
       { name: "Tailwind CSS", icon: SiTailwindcss },
-      { name: "Vue.js", icon: SiVuedotjs },
     ],
   },
   {
     title: "Backend",
     skills: [
-      { name: "Node.js", icon: FaNodeJs },
-      { name: "Express", icon: SiExpress },
-      { name: "Python", icon: FaPython },
+      { name: "Java", icon: FaJava },
+      { name: "Spring Boot", icon: SiSpringboot },
+      { name: "Spring Security", icon: SiSpringsecurity },
+      { name: "Maven", icon: SiApachemaven },
+      { name: "REST APIs", icon: TbApi },
+      { name: "MySQL", icon: SiMysql },
       { name: "PostgreSQL", icon: SiPostgresql },
-      { name: "MongoDB", icon: SiMongodb },
     ],
   },
   {
-    title: "Tools & Others",
+    title: "Tools & Cloud",
     skills: [
       { name: "Git", icon: FaGitAlt },
+      { name: "CI/CD", icon: SiGithubactions },
       { name: "Docker", icon: FaDocker },
-      { name: "Figma", icon: SiFigma },
-      { name: "Webpack", icon: SiWebpack },
-      { name: "Testing", icon: FaVial },
+      { name: "Azure", icon: VscAzure },
+      { name: "AWS", icon: FaAws }
     ],
   },
 ];

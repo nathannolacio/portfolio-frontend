@@ -1,5 +1,6 @@
 import { FaCircle } from "react-icons/fa";
 import Badge from "../../ui/Badge";
+import { useTranslations } from "next-intl";
 
 type StatusBadgeProps = {
     status: "In Progress" | "Completed" | "MVP";
@@ -11,7 +12,15 @@ const statusStyles: Record<StatusBadgeProps["status"], string> = {
     "MVP": "bg-sky-50/70 text-sky-600 border-sky-100",
 };
 
+const statusTranslationKeys: Record<StatusBadgeProps["status"], string> = {
+  "In Progress": "status.inProgress",
+  "Completed": "status.completed",
+  MVP: "status.mvp",
+};
+
 export default function StatusBadge({ status }: StatusBadgeProps) {
+    const t = useTranslations("Projects");
+
     return (
         <Badge 
             icon={
@@ -19,7 +28,7 @@ export default function StatusBadge({ status }: StatusBadgeProps) {
                     size={8}
                 />
             }
-            text={status}
+            text={t(statusTranslationKeys[status])}
             className={statusStyles[status]}
         />
     );

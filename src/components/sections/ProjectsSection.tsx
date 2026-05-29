@@ -4,9 +4,11 @@ import Container from "../layout/Container";
 import ProjectCard from "../layout/projects/ProjectCard";
 import ProjectModal from "../layout/projects/ProjectModal";
 import SectionTitle from "../ui/typography/SectionTitle";
+import { useTranslations } from "next-intl";
 
 export default function ProjectsSection() {
     const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+    const t = useTranslations("Projects");
 
     return (
         <section 
@@ -16,10 +18,10 @@ export default function ProjectsSection() {
             <Container>
                 <div className="mb-12">
                     <SectionTitle>
-                        Projects
+                        {t("title")}
                     </SectionTitle>
                     <p className="text-lg md:text-xl mt-2 text-slate-600">
-                        Some of the projects I’ve built through study, curiosity, and real-world problem solving.
+                        {t("description")}
                     </p>
                 </div>
                 

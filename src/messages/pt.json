@@ -1,0 +1,190 @@
+{
+  "Navbar": {
+    "home": "Início",
+    "about": "Sobre",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+
+  "Hero": {
+    "badge": {
+      "word1": "Olá!",
+      "word2": "Eu sou"
+    },
+    "title": "Construo soluções de software para problemas reais — esse é o meu propósito.",
+    "description": "Se você procura um desenvolvedor atencioso, focado em impacto real, acabou de encontrar.",
+    "contactButton": "Vamos conversar!",
+    "cvButton": "Baixar CV"
+  },
+
+  "About": {
+    "title": "Sobre Mim",
+    "description": "Um desenvolvedor apaixonado por criar experiências limpas e centradas no usuário.",
+
+    "whoIam": {
+      "title": "Quem sou eu",
+      "paragraph1": "Sou um Desenvolvedor Full Stack focado em construir soluções reais através da tecnologia. Gosto de criar aplicações escaláveis e centradas no usuário, transformando ideias em produtos práticos e eficientes.",
+      "paragraph2": "Com experiência em tecnologias backend e frontend, consigo desenvolver aplicações completas de ponta a ponta, desde arquitetura de sistemas e APIs até interfaces responsivas e experiência do usuário."
+    },
+
+    "skills": {
+      "title": "Skills",
+      "block1": "Frontend",
+      "block2": "Backend",
+      "block3": "Tools & Cloud" 
+    } 
+  },
+
+  "Projects": {
+    "title": "Projetos",
+    "description": "Alguns dos projetos que desenvolvi através de estudos, curiosidade e resolução de problemas reais.",
+    "moreAbout": "Mais sobre",
+    "modal": {
+      "close": "Fechar modal",
+      "noPreview": "Pré-visualização indisponível",
+      "overview": "Visão geral",
+      "technologies": "Tecnologias",
+      "description": "Descrição",
+      "features": "Recursos",
+      "images": "Imagens",
+      "liveDemo": "Demo ao vivo",
+      "github": "GitHub",
+      "imageAlt": "{title} imagem"
+    },
+    "type": {
+      "realProject": "Projeto Real",
+      "studyProject": "Projeto de Estudo"
+    },
+    "status": {
+      "inProgress": "Em andamento",
+      "completed": "Concluído",
+      "mvp": "MVP"
+    },
+    "category": {
+      "system": "Sistema",
+      "cms": "CMS",
+      "landingPage": "Landing Page",
+      "portfolio": "Portfólio",
+      "dashboard": "Painel",
+      "api": "API",
+      "mobileApp": "Aplicativo móvel"
+    },
+    "myBalance": {
+      "title": "My Balance",
+      "shortDescription": "API de backend para gerenciamento financeiro pessoal construída com Spring Boot.",
+      "fullDescription": "My Balance é uma aplicação backend projetada para ajudar usuários a gerenciar finanças pessoais através do controle de transações, cálculo de saldo, gerenciamento de contas e organização financeira. O projeto foi construído com Spring Boot e segue uma arquitetura em camadas focada em escalabilidade, manutenibilidade e boas práticas de desenvolvimento backend.",
+      "features": {
+        "transactionManagement": "Gerenciamento de transações",
+        "balanceCalculation": "Cálculo de saldo",
+        "userManagement": "Gerenciamento de usuários",
+        "bankAccountManagement": "Gerenciamento de contas bancárias",
+        "restApiArchitecture": "Arquitetura REST API",
+        "environmentBasedConfiguration": "Configuração baseada em ambiente",
+        "layeredBackendArchitecture": "Arquitetura backend em camadas",
+        "jwtAuthenticationStructure": "Estrutura de autenticação JWT",
+        "ciWorkflowIntegration": "Integração de workflow CI"
+      }
+    },
+    "lottus": {
+      "title": "Lottus",
+      "shortDescription": "Plataforma de gestão de biblioteca acadêmica construída com Clean Architecture, cache Redis e processamento assíncrono.",
+      "fullDescription": "Lottus é uma plataforma fullstack de gestão de biblioteca acadêmica desenvolvida com uma arquitetura backend escalável, focada em desempenho, manutenibilidade e separação de responsabilidades. O backend segue os princípios de Clean Architecture e integra cache Redis, processamento assíncrono com RabbitMQ, autenticação JWT e infraestrutura Dockerizada para suportar fluxos de trabalho modernos de nível empresarial.",
+      "features": {
+        "cleanArchitecture": "Clean Architecture",
+        "redisCacheLayer": "Camada de cache Redis",
+        "jwtAuthentication": "Autenticação JWT",
+        "asynchronousFileProcessing": "Processamento assíncrono de arquivos",
+        "rabbitMqIntegration": "Integração com RabbitMQ",
+        "dockerizedInfrastructure": "Infraestrutura Dockerizada",
+        "swaggerApiDocumentation": "Documentação Swagger API",
+        "restApiArchitecture": "Arquitetura REST API",
+        "libraryLoanManagement": "Gerenciamento de empréstimos",
+        "digitalCatalogSystem": "Sistema de catálogo digital",
+        "studentClassManagement": "Gestão de alunos e turmas"
+      }
+    },
+    "lottusMobile": {
+      "title": "Lottus Mobile",
+      "shortDescription": "Plataforma de leitura mobile voltada para pais e alunos.",
+      "fullDescription": "Lottus Mobile é uma plataforma móvel fullstack projetada para ajudar pais a acompanhar e gerenciar as atividades de leitura escolar de seus filhos. O ecossistema inclui uma API backend segura construída com Spring Boot e um aplicativo móvel desenvolvido com React Native, com foco em segurança de autenticação, arquitetura modular e experiências móveis escaláveis.",
+      "features": {
+        "mobileApplicationForParents": "Aplicativo móvel para pais",
+        "jwtAuthentication": "Autenticação JWT",
+        "googleOauth2Login": "Login Google OAuth2",
+        "refreshTokenRotation": "Rotação de token de atualização",
+        "loanManagement": "Gerenciamento de empréstimos",
+        "studentEnrollmentValidation": "Validação de matrícula de alunos",
+        "swaggerApiDocumentation": "Documentação Swagger API",
+        "flywayDatabaseMigrations": "Migrações de banco Flyway",
+        "modularArchitectureByFeature": "Arquitetura modular por recurso",
+        "secureTokenStorage": "Armazenamento seguro de token",
+        "dockerizedDatabaseSetup": "Configuração de banco Dockerizada",
+        "mobileFirstUserExperience": "Experiência mobile-first"
+      }
+    },
+    "kingdomRoster": {
+      "title": "Kingdom Roster",
+      "shortDescription": "Sistema de agendamento ministerial para igrejas, focado em organização, planejamento e gestão de equipes.",
+      "fullDescription": "Escala do Reino é um projeto pessoal criado para ajudar igrejas a organizar escalas ministeriais e gerenciar equipes de voluntários de forma mais eficiente. O sistema está sendo desenvolvido com uma arquitetura backend escalável, com foco em autenticação, controle de acesso baseado em funções, gerenciamento de escalas e evolução arquitetural de longo prazo usando práticas modernas do Spring Boot.",
+      "features": {
+        "jwtAuthentication": "Autenticação JWT",
+        "roleBasedAccessControl": "Controle de acesso baseado em funções",
+        "churchMinistryScheduling": "Agendamento ministerial",
+        "memberTeamManagement": "Gestão de membros e equipes",
+        "calendarVisualization": "Visualização de calendário",
+        "dashboardOverview": "Visão geral do painel",
+        "restApiArchitecture": "Arquitetura REST API",
+        "flywayDatabaseMigrations": "Migrações de banco Flyway",
+        "dockerizedDatabaseSetup": "Configuração Dockerizada",
+        "swaggerApiDocumentation": "Documentação Swagger API",
+        "layeredArchitecture": "Arquitetura em camadas",
+        "scalableBackendFoundation": "Fundação backend escalável"
+      }
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "shortDescription": "Portfólio fullstack de desenvolvedor com CMS backend modular em Spring Boot e frontend moderno em Next.js e React.",
+      "fullDescription": "Este projeto foi projetado para demonstrar práticas reais de desenvolvimento fullstack por meio de uma plataforma de portfólio escalável. O frontend foca em componentes de UI reutilizáveis, design responsivo e princípios modernos de experiência do usuário usando Next.js e React. O backend está sendo desenvolvido com uma arquitetura de monólito modular usando Spring Boot, fornecendo uma experiência CMS personalizada para gerenciamento dinâmico de conteúdo do portfólio, autenticação e comunicação de e-mail de contato. O projeto enfatiza escalabilidade, manutenibilidade, organização limpa e arquitetura de aplicação real.",
+      "features": {
+        "responsiveLandingPage": "Landing page responsiva",
+        "reusableUiComponents": "Componentes de UI reutilizáveis",
+        "projectsShowcaseSection": "Seção de projetos",
+        "aboutSection": "Seção sobre",
+        "contactSection": "Seção de contato",
+        "modularMonolithBackendArchitecture": "Arquitetura backend de monólito modular",
+        "restfulApiStructure": "Estrutura RESTful API",
+        "jwtAuthenticationAndAuthorization": "Autenticação e autorização JWT",
+        "protectedAdminRoutes": "Rotas de admin protegidas",
+        "contactEmailService": "Serviço de e-mail de contato",
+        "portfolioCmsManagement": "Gerenciamento de CMS do portfólio",
+        "dynamicPortfolioContentManagement": "Gerenciamento dinâmico de conteúdo do portfólio",
+        "environmentBasedConfiguration": "Configuração baseada em ambiente",
+        "dockerizedApplicationSetup": "Configuração de aplicação Dockerizada",
+        "scalableFrontendBackendStructure": "Estrutura frontend e backend escalável"
+      }
+    }
+  },
+
+  "Contact": {
+    "title": "Entre em Contato",
+    "description": "Tem alguma dúvida ou quer trabalhar comigo? Me envie uma mensagem.",
+
+    "form": {
+      "name": "Nome",
+      "email": "E-mail",
+      "message": "Mensagem",
+      "button": "Enviar Mensagem",
+      "sending": "Enviando...",
+      "namePlaceholder": "Seu nome",
+      "emailPlaceholder": "seu.email@exemplo.com",
+      "messagePlaceholder": "Sua mensagem aqui...",
+      "successMessage": "Mensagem enviada com sucesso!",
+      "errorMessage": "Falha ao enviar a mensagem. Por favor, tente novamente."
+    }
+  },
+
+  "Footer": {
+    "cta": "Entre em contato!",
+    "copy": "©{year} Nathan Nolacio. Todos os direitos reservados."
+  }
+}

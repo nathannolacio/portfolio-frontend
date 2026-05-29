@@ -1,11 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import Container from "../layout/Container";
 import SectionTitle from "../ui/typography/SectionTitle";
 import Button from "../ui/Button";
 
 export default function ContactSection() {
+    const t = useTranslations("Contact");
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -50,10 +52,10 @@ export default function ContactSection() {
             <Container className="flex flex-col items-center">
                 <div className="mb-12 text-center">
                     <SectionTitle>
-                        Get in Touch
+                        {t("title")}
                     </SectionTitle>
                     <p className="text-lg md:text-xl mt-2 text-zinc-600">
-                        Have a question or want to work together? Send me a message.
+                        {t("description")}
                     </p>
                 </div>
 
@@ -64,7 +66,7 @@ export default function ContactSection() {
                                 htmlFor="name"
                                 className="text-sm font-semibold text-zinc-700"
                             >
-                                Name
+                                {t("form.name")}
                             </label>
                             <input
                                 type="text"
@@ -73,7 +75,7 @@ export default function ContactSection() {
                                 value={formData.name}
                                 onChange={handleChange}
                                 required
-                                placeholder="Your name"
+                                placeholder={t("form.namePlaceholder")}
                                 className="rounded-lg border-2 border-zinc-200 bg-neutral-50 px-4 py-2 text-zinc-900 placeholder-zinc-400 transition-colors focus:border-zinc-400 focus:outline-none"
                             />
                         </div>
@@ -83,7 +85,7 @@ export default function ContactSection() {
                                 htmlFor="email"
                                 className="text-sm font-semibold text-zinc-700"
                             >
-                                Email
+                                {t("form.email")}
                             </label>
                             <input
                                 type="email"
@@ -92,7 +94,7 @@ export default function ContactSection() {
                                 value={formData.email}
                                 onChange={handleChange}
                                 required
-                                placeholder="your.email@example.com"
+                                placeholder={t("form.emailPlaceholder")}
                                 className="rounded-lg border-2 border-zinc-200 bg-neutral-50 px-4 py-2 text-zinc-900 placeholder-zinc-400 transition-colors focus:border-zinc-400 focus:outline-none"
                             />
                         </div>
@@ -102,7 +104,7 @@ export default function ContactSection() {
                                 htmlFor="message"
                                 className="text-sm font-semibold text-zinc-700"
                             >
-                                Message
+                                {t("form.message")}
                             </label>
                             <textarea
                                 id="message"
@@ -110,7 +112,7 @@ export default function ContactSection() {
                                 value={formData.message}
                                 onChange={handleChange}
                                 required
-                                placeholder="Your message here..."
+                                placeholder={t("form.messagePlaceholder")}
                                 rows={6}
                                 className="rounded-lg border-2 border-zinc-200 bg-neutral-50 px-4 py-2 text-zinc-900 placeholder-zinc-400 transition-colors focus:border-zinc-400 focus:outline-none resize-none"
                             />
@@ -122,16 +124,16 @@ export default function ContactSection() {
                                 type="submit"
                                 className={isSubmitting ? "opacity-50 cursor-not-allowed pointer-events-none" : ""}
                             >
-                                {isSubmitting ? "Sending..." : "Send Message"}
+                                {isSubmitting ? t("form.sending") : t("form.button")}
                             </Button>
                             {submitStatus === "success" && (
                                 <span className="text-sm font-medium text-emerald-600">
-                                    Message sent successfully!
+                                    {t("form.successMessage")}
                                 </span>
                             )}
                             {submitStatus === "error" && (
                                 <span className="text-sm font-medium text-red-600">
-                                    Failed to send message. Please try again.
+                                    {t("form.errorMessage")}
                                 </span>
                             )}
                         </div>

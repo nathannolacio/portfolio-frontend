@@ -7,7 +7,9 @@ import NavigationLinks from '../../navigation/NavigationLinks';
 
 type NavBarProps = {
     activeSection?: string;
-    setActiveSection?: (section: string) => void;
+    setActiveSection?: React.Dispatch<
+        React.SetStateAction<string>
+    >;
 }
 
 export default function NavBar({ activeSection, setActiveSection }: NavBarProps) {

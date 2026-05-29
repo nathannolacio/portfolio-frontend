@@ -1,10 +1,13 @@
+"use client";
+
 import Link from "next/link";
 import { navItems } from "../../data/navigation";
+import { useTranslations } from "next-intl";
 
 type NavigationLinksProps = {
   activeSection?: string;
-  setActiveSection?: (section: string) => void;
-  setIsMenuOpen?: (isOpen: boolean) => void;
+  setActiveSection?: React.Dispatch<React.SetStateAction<string>>;
+  setIsMenuOpen?: React.Dispatch<React.SetStateAction<boolean>>;
   listClassName?: string;
   linkClassName?: string;
   activeLinkClassName?: string;
@@ -16,8 +19,10 @@ export default function NavigationLinks({
   setIsMenuOpen,
   listClassName,
   linkClassName,
-  activeLinkClassName,
+  activeLinkClassName
 }: NavigationLinksProps) {
+  const t = useTranslations("Navbar");
+
   return (
     <ul className={listClassName}>
       {navItems.map((item) => (
@@ -34,7 +39,7 @@ export default function NavigationLinks({
               setIsMenuOpen?.(false);
             }}
           >
-            {item.label}
+            {t(item.label)}
           </Link>
         </li>
       ))}

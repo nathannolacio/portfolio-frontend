@@ -1,0 +1,190 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+
+  "Hero": {
+    "badge": {
+      "word1": "Hi!",
+      "word2": "I'm"
+    },
+    "title": "I build software solutions for <highlight>real problems</highlight> — that's my purpose.",
+    "description": "If you are looking for thoughtful development focused on real impact, you just found it.",
+    "contactButton": "Let's talk!",
+    "cvButton": "Download CV"
+  },
+
+  "About": {
+    "title": "About Me",
+    "description": "A passionate developer focused on building clean, user-centered experiences.",
+
+    "whoIam": {
+      "title": "Who I am",
+      "paragraph1": "I’m a Full Stack Developer focused on building real-world solutions through technology. I enjoy creating scalable and user-focused applications, turning ideas into practical and efficient products.",
+      "paragraph2": "With experience across both backend and frontend technologies, I’m able to develop complete end-to-end applications, from system architecture and APIs to responsive interfaces and user experience."
+    },
+
+    "skills": {
+      "title": "Skills",
+      "block1": "Frontend",
+      "block2": "Backend",
+      "block3": "Tools & Cloud" 
+    } 
+  },
+
+  "Projects": {
+    "title": "Projects",
+    "description": "Some of the projects I’ve built through study, curiosity, and real-world problem solving.",
+    "moreAbout": "More about",
+    "modal": {
+      "close": "Close modal",
+      "noPreview": "No preview available",
+      "overview": "Overview",
+      "technologies": "Technologies",
+      "description": "Description",
+      "features": "Features",
+      "images": "Images",
+      "liveDemo": "Live Demo",
+      "github": "GitHub",
+      "imageAlt": "{title} image"
+    },
+    "type": {
+      "realProject": "Real Project",
+      "studyProject": "Study Project"
+    },
+    "status": {
+      "inProgress": "In Progress",
+      "completed": "Completed",
+      "mvp": "MVP"
+    },
+    "category": {
+      "system": "System",
+      "cms": "CMS",
+      "landingPage": "Landing Page",
+      "portfolio": "Portfolio",
+      "dashboard": "Dashboard",
+      "api": "API",
+      "mobileApp": "Mobile App"
+    },
+    "myBalance": {
+      "title": "My Balance",
+      "shortDescription": "Personal finance management backend API built with Spring Boot.",
+      "fullDescription": "My Balance is a backend application designed to help users manage personal finances through transaction tracking, balance calculation, account management, and financial organization. The project was built using Spring Boot and follows a layered architecture focused on scalability, maintainability, and clean backend development practices.",
+      "features": {
+        "transactionManagement": "Transaction management",
+        "balanceCalculation": "Balance calculation",
+        "userManagement": "User management",
+        "bankAccountManagement": "Bank account management",
+        "restApiArchitecture": "REST API architecture",
+        "environmentBasedConfiguration": "Environment-based configuration",
+        "layeredBackendArchitecture": "Layered backend architecture",
+        "jwtAuthenticationStructure": "JWT authentication structure",
+        "ciWorkflowIntegration": "CI workflow integration"
+      }
+    },
+    "lottus": {
+      "title": "Lottus",
+      "shortDescription": "Academic library management platform built with Clean Architecture, Redis caching, and asynchronous processing.",
+      "fullDescription": "Lottus is a fullstack academic library management platform developed with a scalable backend architecture focused on performance, maintainability, and separation of concerns. The backend follows Clean Architecture principles and integrates Redis caching, RabbitMQ asynchronous processing, JWT authentication, and Dockerized infrastructure to support modern enterprise-like workflows.",
+      "features": {
+        "cleanArchitecture": "Clean Architecture",
+        "redisCacheLayer": "Redis cache layer",
+        "jwtAuthentication": "JWT authentication",
+        "asynchronousFileProcessing": "Asynchronous file processing",
+        "rabbitMqIntegration": "RabbitMQ message broker integration",
+        "dockerizedInfrastructure": "Dockerized infrastructure",
+        "swaggerApiDocumentation": "Swagger API documentation",
+        "restApiArchitecture": "REST API architecture",
+        "libraryLoanManagement": "Library loan management",
+        "digitalCatalogSystem": "Digital catalog system",
+        "studentClassManagement": "Student and class management"
+      }
+    },
+    "lottusMobile": {
+      "title": "Lottus Mobile",
+      "shortDescription": "Mobile-oriented reading management platform for parents and students.",
+      "fullDescription": "Lottus Mobile is a fullstack mobile platform designed to help parents track and manage their children's school reading activities. The ecosystem includes a secure backend API built with Spring Boot and a mobile application developed with React Native, focusing on authentication security, modular architecture, and scalable mobile-first experiences.",
+      "features": {
+        "mobileApplicationForParents": "Mobile application for parents",
+        "jwtAuthentication": "JWT authentication",
+        "googleOauth2Login": "Google OAuth2 login",
+        "refreshTokenRotation": "Refresh token rotation",
+        "loanManagement": "Loan management",
+        "studentEnrollmentValidation": "Student enrollment validation",
+        "swaggerApiDocumentation": "Swagger API documentation",
+        "flywayDatabaseMigrations": "Flyway database migrations",
+        "modularArchitectureByFeature": "Modular architecture by feature",
+        "secureTokenStorage": "Secure token storage",
+        "dockerizedDatabaseSetup": "Dockerized database setup",
+        "mobileFirstUserExperience": "Mobile-first user experience"
+      }
+    },
+    "kingdomRoster": {
+      "title": "Kingdom Roster",
+      "shortDescription": "Church ministry scheduling system focused on organization, planning, and team management.",
+      "fullDescription": "Escala do Reino is a personal project created to help churches organize ministry schedules and manage volunteer teams more efficiently. The system is being developed with a scalable backend architecture, focusing on authentication, role-based access control, schedule management, and long-term architectural evolution using modern Spring Boot practices.",
+      "features": {
+        "jwtAuthentication": "JWT authentication",
+        "roleBasedAccessControl": "Role-based access control",
+        "churchMinistryScheduling": "Church ministry scheduling",
+        "memberTeamManagement": "Member and team management",
+        "calendarVisualization": "Calendar visualization",
+        "dashboardOverview": "Dashboard overview",
+        "restApiArchitecture": "REST API architecture",
+        "flywayDatabaseMigrations": "Flyway database migrations",
+        "dockerizedDatabaseSetup": "Dockerized database setup",
+        "swaggerApiDocumentation": "Swagger API documentation",
+        "layeredArchitecture": "Layered architecture",
+        "scalableBackendFoundation": "Scalable backend foundation"
+      }
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "shortDescription": "Fullstack developer portfolio featuring a modular Spring Boot backend CMS and a modern frontend built with Next.js and React.",
+      "fullDescription": "This project was designed to showcase real-world fullstack development practices through a scalable portfolio platform. The frontend focuses on reusable UI components, responsive design, and modern user experience principles using Next.js and React. The backend is being developed with a modular monolith architecture using Spring Boot, providing a custom CMS experience for dynamically managing portfolio content, authentication, and contact email communication. The project emphasizes scalability, maintainability, clean organization, and real-world application architecture.",
+      "features": {
+        "responsiveLandingPage": "Responsive landing page",
+        "reusableUiComponents": "Reusable UI components",
+        "projectsShowcaseSection": "Projects showcase section",
+        "aboutSection": "About section",
+        "contactSection": "Contact section",
+        "modularMonolithBackendArchitecture": "Modular monolith backend architecture",
+        "restfulApiStructure": "RESTful API structure",
+        "jwtAuthenticationAndAuthorization": "JWT authentication and authorization",
+        "protectedAdminRoutes": "Protected admin routes",
+        "contactEmailService": "Contact email service",
+        "portfolioCmsManagement": "Portfolio CMS management",
+        "dynamicPortfolioContentManagement": "Dynamic portfolio content management",
+        "environmentBasedConfiguration": "Environment-based configuration",
+        "dockerizedApplicationSetup": "Dockerized application setup",
+        "scalableFrontendBackendStructure": "Scalable frontend and backend structure"
+      }
+    }
+  },
+
+  "Contact": {
+    "title": "Get in Touch",
+    "description": "Have a question or want to work together? Send me a message.",
+
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "button": "Send Message",
+      "sending": "Sending...",
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "your.email@example.com",
+      "messagePlaceholder": "Your message here...",
+      "successMessage": "Message sent successfully!",
+      "errorMessage": "Failed to send message. Please try again."
+    }
+  },
+
+  "Footer": {
+    "cta": "Get in touch!",
+    "copy": "©{year} Nathan Nolacio. All rights reserved."
+  }
+}

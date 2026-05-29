@@ -1,7 +1,7 @@
 export type Project = {
   id: number;
 
-  // Core info
+  // Core info (translation keys)
   title: string;
   shortDescription: string;
   fullDescription: string;
@@ -24,8 +24,8 @@ export type Project = {
   // Stack
   technologies: string[];
 
-  // Modal details
-  features?: string[];  
+  // Modal details (translation keys)
+  features?: string[];
 
   // Status
   status: "In Progress" | "Completed";
@@ -38,12 +38,12 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: 1,
-    title: "My Balance",
-    shortDescription: "Personal finance management backend API built with Spring Boot.",
-    fullDescription: "My Balance is a backend application designed to help users manage personal finances through transaction tracking, balance calculation, account management, and financial organization. The project was built using Spring Boot and follows a layered architecture focused on scalability, maintainability, and clean backend development practices.",
+    title: "myBalance.title",
+    shortDescription: "myBalance.shortDescription",
+    fullDescription: "myBalance.fullDescription",
     preview: "/projects/meu-saldo/preview.png",
     type: "Study Project",
-    category: "API",  
+    category: "API",
     technologies: [
       "Java 21",
       "Spring Boot",
@@ -56,24 +56,24 @@ export const projects: Project[] = [
       "Tailwind CSS"
     ],
     features: [
-      "Transaction management",
-      "Balance calculation",
-      "User management",
-      "Bank account management",
-      "REST API architecture",
-      "Environment-based configuration",
-      "Layered backend architecture",
-      "JWT authentication structure",
-      "CI workflow integration"
+      "myBalance.features.transactionManagement",
+      "myBalance.features.balanceCalculation",
+      "myBalance.features.userManagement",
+      "myBalance.features.bankAccountManagement",
+      "myBalance.features.restApiArchitecture",
+      "myBalance.features.environmentBasedConfiguration",
+      "myBalance.features.layeredBackendArchitecture",
+      "myBalance.features.jwtAuthenticationStructure",
+      "myBalance.features.ciWorkflowIntegration"
     ],
     status: "In Progress",
     githubUrl: "https://github.com/meu-saldo",
   },
   {
     id: 2,
-    title: "Lottus",
-    shortDescription: "Academic library management platform built with Clean Architecture, Redis caching, and asynchronous processing.",
-    fullDescription: "Lottus is a fullstack academic library management platform developed with a scalable backend architecture focused on performance, maintainability, and separation of concerns. The backend follows Clean Architecture principles and integrates Redis caching, RabbitMQ asynchronous processing, JWT authentication, and Dockerized infrastructure to support modern enterprise-like workflows.",
+    title: "lottus.title",
+    shortDescription: "lottus.shortDescription",
+    fullDescription: "lottus.fullDescription",
     preview: "/projects/lottus/lottus-preview.png",
     type: "Study Project",
     category: "System",
@@ -91,26 +91,26 @@ export const projects: Project[] = [
       "TailwindCSS"
     ],
     features: [
-      "Clean Architecture",
-      "Redis cache layer",
-      "JWT authentication",
-      "Asynchronous file processing",
-      "RabbitMQ message broker integration",
-      "Dockerized infrastructure",
-      "Swagger API documentation",
-      "REST API architecture",
-      "Library loan management",
-      "Digital catalog system",
-      "Student and class management"
+      "lottus.features.cleanArchitecture",
+      "lottus.features.redisCacheLayer",
+      "lottus.features.jwtAuthentication",
+      "lottus.features.asynchronousFileProcessing",
+      "lottus.features.rabbitMqIntegration",
+      "lottus.features.dockerizedInfrastructure",
+      "lottus.features.swaggerApiDocumentation",
+      "lottus.features.restApiArchitecture",
+      "lottus.features.libraryLoanManagement",
+      "lottus.features.digitalCatalogSystem",
+      "lottus.features.studentClassManagement"
     ],
     githubUrl: "https://github.com/Lottus-Solutions",
     status: "Completed"
   },
   {
     id: 3,
-    title: "Lottus Mobile",
-    shortDescription: "Mobile-oriented reading management platform for parents and students.",
-    fullDescription: "Lottus Mobile is a fullstack mobile platform designed to help parents track and manage their children's school reading activities. The ecosystem includes a secure backend API built with Spring Boot and a mobile application developed with React Native, focusing on authentication security, modular architecture, and scalable mobile-first experiences.",
+    title: "lottusMobile.title",
+    shortDescription: "lottusMobile.shortDescription",
+    fullDescription: "lottusMobile.fullDescription",
     preview: "/projects/lottus/lottus-preview.png",
     type: "Study Project",
     category: "Mobile App",
@@ -129,27 +129,27 @@ export const projects: Project[] = [
       "TailwindCSS"
     ],
     features: [
-      "Mobile application for parents",
-      "JWT authentication",
-      "Google OAuth2 login",
-      "Refresh token rotation",
-      "Loan management",
-      "Student enrollment validation",
-      "Swagger API documentation",
-      "Flyway database migrations",
-      "Modular architecture by feature",
-      "Secure token storage",
-      "Dockerized database setup",
-      "Mobile-first user experience"
+      "lottusMobile.features.mobileApplicationForParents",
+      "lottusMobile.features.jwtAuthentication",
+      "lottusMobile.features.googleOauth2Login",
+      "lottusMobile.features.refreshTokenRotation",
+      "lottusMobile.features.loanManagement",
+      "lottusMobile.features.studentEnrollmentValidation",
+      "lottusMobile.features.swaggerApiDocumentation",
+      "lottusMobile.features.flywayDatabaseMigrations",
+      "lottusMobile.features.modularArchitectureByFeature",
+      "lottusMobile.features.secureTokenStorage",
+      "lottusMobile.features.dockerizedDatabaseSetup",
+      "lottusMobile.features.mobileFirstUserExperience"
     ],
     githubUrl: "https://github.com/Lottus-Solutions",
     status: "In Progress"
   },
   {
     id: 4,
-    title: "Kingdom Roster",
-    shortDescription: "Church ministry scheduling system focused on organization, planning, and team management.",
-    fullDescription: "Escala do Reino is a personal project created to help churches organize ministry schedules and manage volunteer teams more efficiently. The system is being developed with a scalable backend architecture, focusing on authentication, role-based access control, schedule management, and long-term architectural evolution using modern Spring Boot practices.",
+    title: "kingdomRoster.title",
+    shortDescription: "kingdomRoster.shortDescription",
+    fullDescription: "kingdomRoster.fullDescription",
     preview: "/projects/escala-do-reino/escala-do-reino-preview.png",
     type: "Real Project",
     category: "System",
@@ -167,61 +167,61 @@ export const projects: Project[] = [
       "Swagger"
     ],
     features: [
-      "JWT authentication",
-      "Role-based access control",
-      "Church ministry scheduling",
-      "Member and team management",
-      "Calendar visualization",
-      "Dashboard overview",
-      "REST API architecture",
-      "Flyway database migrations",
-      "Dockerized database setup",
-      "Swagger API documentation",
-      "Layered architecture",
-      "Scalable backend foundation"
+      "kingdomRoster.features.jwtAuthentication",
+      "kingdomRoster.features.roleBasedAccessControl",
+      "kingdomRoster.features.churchMinistryScheduling",
+      "kingdomRoster.features.memberTeamManagement",
+      "kingdomRoster.features.calendarVisualization",
+      "kingdomRoster.features.dashboardOverview",
+      "kingdomRoster.features.restApiArchitecture",
+      "kingdomRoster.features.flywayDatabaseMigrations",
+      "kingdomRoster.features.dockerizedDatabaseSetup",
+      "kingdomRoster.features.swaggerApiDocumentation",
+      "kingdomRoster.features.layeredArchitecture",
+      "kingdomRoster.features.scalableBackendFoundation"
     ],
     githubUrl: "https://github.com/your-user/escala-do-reino",
     status: "In Progress"
   },
   {
-  id: 5,
-  title: "Portfolio",
-  shortDescription: "Fullstack developer portfolio featuring a modular Spring Boot backend CMS and a modern frontend built with Next.js and React.",
-  fullDescription: "This project was designed to showcase real-world fullstack development practices through a scalable portfolio platform. The frontend focuses on reusable UI components, responsive design, and modern user experience principles using Next.js and React. The backend is being developed with a modular monolith architecture using Spring Boot, providing a custom CMS experience for dynamically managing portfolio content, authentication, and contact email communication. The project emphasizes scalability, maintainability, clean organization, and real-world application architecture.",
-  preview: "/projects/portfolio/portfolio-preview.png",
-  type: "Real Project",
-  category: "Portfolio",
-  technologies: [
-    "Java",
-    "Spring Boot",
-    "Spring Security",
-    "JWT Authentication",
-    "PostgreSQL",
-    "Docker",
-    "Maven",
-    "Next.js",
-    "React",
-    "TypeScript",
-    "TailwindCSS"
-  ],
-  features: [
-    "Responsive landing page",
-    "Reusable UI components",
-    "Projects showcase section",
-    "About section",
-    "Contact section",
-    "Modular monolith backend architecture",
-    "RESTful API structure",
-    "JWT authentication and authorization",
-    "Protected admin routes",
-    "Contact email service",
-    "Portfolio CMS management",
-    "Dynamic portfolio content management",
-    "Environment-based configuration",
-    "Dockerized application setup",
-    "Scalable frontend and backend structure"
-  ],
-  githubUrl: "https://github.com/nathannolacio/portfolio-backend",
-  status: "In Progress"
-}
+    id: 5,
+    title: "portfolio.title",
+    shortDescription: "portfolio.shortDescription",
+    fullDescription: "portfolio.fullDescription",
+    preview: "/projects/portfolio/portfolio-preview.png",
+    type: "Real Project",
+    category: "Portfolio",
+    technologies: [
+      "Java",
+      "Spring Boot",
+      "Spring Security",
+      "JWT Authentication",
+      "PostgreSQL",
+      "Docker",
+      "Maven",
+      "Next.js",
+      "React",
+      "TypeScript",
+      "TailwindCSS"
+    ],
+    features: [
+      "portfolio.features.responsiveLandingPage",
+      "portfolio.features.reusableUiComponents",
+      "portfolio.features.projectsShowcaseSection",
+      "portfolio.features.aboutSection",
+      "portfolio.features.contactSection",
+      "portfolio.features.modularMonolithBackendArchitecture",
+      "portfolio.features.restfulApiStructure",
+      "portfolio.features.jwtAuthenticationAndAuthorization",
+      "portfolio.features.protectedAdminRoutes",
+      "portfolio.features.contactEmailService",
+      "portfolio.features.portfolioCmsManagement",
+      "portfolio.features.dynamicPortfolioContentManagement",
+      "portfolio.features.environmentBasedConfiguration",
+      "portfolio.features.dockerizedApplicationSetup",
+      "portfolio.features.scalableFrontendBackendStructure"
+    ],
+    githubUrl: "https://github.com/nathannolacio/portfolio-backend",
+    status: "In Progress"
+  }
 ];

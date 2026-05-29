@@ -1,21 +1,21 @@
 export const navItems = [
         { 
-            label: "Home", 
+            label: "home", 
             href: "#home", 
             section: "home" 
         },
         { 
-            label: "About", 
+            label: "about", 
             href: "#about", 
             section: "about"
         },
         { 
-            label: "Projects", 
+            label: "projects", 
             href: "#projects", 
             section: "projects" 
         },
         { 
-            label: "Contact", 
+            label: "contact", 
             href: "#contact", 
             section: "contact" 
         }

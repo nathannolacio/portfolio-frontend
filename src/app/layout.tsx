@@ -1,32 +1,13 @@
-import type { Metadata } from "next";
-import { Geist, Space_Grotesk } from "next/font/google";
 import "./globals.css";
-
-const geist = Geist({
-  subsets: ["latin"],
-});
-
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-space-grotesk",
-});
-
-export const metadata: Metadata = {
-  title: "Nathan Nolacio | Software Developer",
-  description: "Software developer portfolio built with Next.js and Tailwind CSS.",
-};
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html
-      lang="en"
-      className={"h-full antialiased"}
-    >
-      <body className={`${geist.className} ${spaceGrotesk.variable} min-h-screen flex flex-col bg-neutral-50 text-zinc-800`}>{children}</body>
+    <html>
+      <body>{children}</body>
     </html>
   );
 }

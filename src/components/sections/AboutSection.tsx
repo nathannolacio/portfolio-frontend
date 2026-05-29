@@ -3,8 +3,11 @@ import SectionTitle from "../ui/typography/SectionTitle";
 import SkillCard from "../ui/SkillCard";
 import { skillGroups } from "../../data/skills";
 import Image from "next/image";
+import { useTranslations } from "use-intl";
 
 export default function AboutSection() {
+    const t = useTranslations("About");
+
     return (
         <section 
             id="about" 
@@ -13,10 +16,10 @@ export default function AboutSection() {
             <Container>
                 <div className="mb-12">
                     <SectionTitle>
-                        About Me
+                        {t("title")}
                     </SectionTitle>
                     <p className="text-lg md:text-xl mt-2 text-slate-600">
-                        A passionate developer focused on building clean, user-centered experiences.
+                        {t("description")}
                     </p>
                 </div>
 
@@ -33,12 +36,12 @@ export default function AboutSection() {
                     </div>
 
                     <div className="flex flex-col gap-2 md:order-1">
-                        <h3 className="text-lg font-semibold text-zinc-800 mb-2">Who I am</h3>
+                        <h3 className="text-lg font-semibold text-zinc-800 mb-2">{t("whoIam.title")}</h3>
                         <p className="text-lg text-zinc-800 leading-7">
-                            {`I’m a Full Stack Developer focused on building real-world solutions through technology. I enjoy creating scalable and user-focused applications, turning ideas into practical and efficient products.`}
+                            {t("whoIam.paragraph1")}
                         </p>
                         <p className="text-lg text-zinc-800 leading-7">
-                            {`With experience across both backend and frontend technologies, I’m able to develop complete end-to-end applications, from system architecture and APIs to responsive interfaces and user experience.`}
+                            {t("whoIam.paragraph2")}
                         </p>
                     </div>
                 </div>
@@ -49,7 +52,7 @@ export default function AboutSection() {
                         {skillGroups.map(({ title, skills }) => (
                             <div key={title}>
                                 <p className="text-sm font-semibold text-zinc-500 uppercase tracking-widest mb-4">
-                                    {title}
+                                    {t(`skills.${title}`)}
                                 </p>
                                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
                                     {skills.map(({ name, icon: Icon }) => (

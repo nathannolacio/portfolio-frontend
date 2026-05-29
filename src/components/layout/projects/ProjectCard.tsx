@@ -3,6 +3,7 @@ import { FaRegImage } from "react-icons/fa";
 import Button from "../../ui/Button";
 import StatusBadge from "./StatusBadge";
 import TypeBadge from "./TypeBadge";
+import { useTranslations } from "next-intl";
 
 type ProjectCardProps = {
     preview?: string;
@@ -21,6 +22,8 @@ export default function ProjectCard({
     type,
     onDetailsClick,
 }: ProjectCardProps) {
+    const t = useTranslations("Projects");
+
   return (
     <div className="bg-neutral-50 border border-zinc-300 rounded-lg shadow-md hover:shadow-lg transition-shadow p-4 h-full flex flex-col gap-4">
 
@@ -31,15 +34,15 @@ export default function ProjectCard({
         
         <div className="relative flex items-center justify-center h-42 bg-zinc-200 rounded-md overflow-hidden border border-zinc-200">
             {preview ? (
-                <Image src={preview} alt={title} fill className="object-cover" />
+                <Image src={preview} alt={t(title)} fill className="object-cover" />
                 ) : (
                 <FaRegImage className="text-4xl text-gray-400" />
             )}
         </div>
 
         <div className="flex-1">
-            <h3 className="font-semibold text-lg mb-2">{title}</h3>
-            <p className="text-gray-600 text-sm">{shortDescription}</p>
+            <h3 className="font-semibold text-lg mb-2">{t(title)}</h3>
+            <p className="text-gray-600 text-sm">{t(shortDescription)}</p>
         </div>
 
         <div className="mt-auto">
@@ -49,7 +52,7 @@ export default function ProjectCard({
                 color="lime"
                 onClick={onDetailsClick}
             >
-                More about
+                {t("moreAbout")}
             </Button>
         </div>
     </div>

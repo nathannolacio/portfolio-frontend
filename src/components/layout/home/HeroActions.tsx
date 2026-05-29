@@ -1,6 +1,9 @@
+import { useTranslations } from "use-intl";
 import Button from "../../ui/Button";
 
 export default function HeroActions() {
+    const t = useTranslations("Hero");
+
     return (
         <div className="flex flex-col md:flex-row w-full justify-around md:items-center gap-6 md:w-fit md:gap-10">
             <Button
@@ -11,7 +14,7 @@ export default function HeroActions() {
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                Download CV
+                {t("cvButton")}
             </Button>
             <Button
                 color="cyan"
@@ -19,7 +22,7 @@ export default function HeroActions() {
                 className="md:order-1"
                 href="#contact"
             >
-                {`Let's talk!`}
+                {t("contactButton")}
             </Button>
         </div>
     );

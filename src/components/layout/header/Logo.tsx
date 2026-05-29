@@ -2,8 +2,10 @@
 
 import Link from "next/link";
 
+import type { Dispatch, SetStateAction } from "react";
+
 type LogoProps = {
-    setActiveSectionAction?: (section: string) => void;
+    setActiveSectionAction?: Dispatch<SetStateAction<string>>;
     clickable?: boolean;
 }
 

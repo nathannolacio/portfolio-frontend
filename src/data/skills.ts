@@ -16,7 +16,7 @@ type SkillGroup = {
 
 export const skillGroups: SkillGroup[] = [
   {
-    title: "Frontend",
+    title: "block1",
     skills: [
       { name: "JavaScript", icon: SiJavascript },
       { name: "TypeScript", icon: SiTypescript },
@@ -26,7 +26,7 @@ export const skillGroups: SkillGroup[] = [
     ],
   },
   {
-    title: "Backend",
+    title: "block2",
     skills: [
       { name: "Java", icon: FaJava },
       { name: "Spring Boot", icon: SiSpringboot },
@@ -38,7 +38,7 @@ export const skillGroups: SkillGroup[] = [
     ],
   },
   {
-    title: "Tools & Cloud",
+    title: "block3",
     skills: [
       { name: "Git", icon: FaGitAlt },
       { name: "CI/CD", icon: SiGithubactions },

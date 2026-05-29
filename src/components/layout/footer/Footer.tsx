@@ -3,9 +3,10 @@ import Container from "../Container";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import NavigationLinks from "../../navigation/NavigationLinks";
 import { useTranslations } from "next-intl";
+import type { Dispatch, SetStateAction } from "react";
 
 type FooterProps = {
-    setActiveSection: (section: string) => void;
+    setActiveSection: Dispatch<SetStateAction<string>>;
 };
 
 export default function Footer({ setActiveSection }: FooterProps) {

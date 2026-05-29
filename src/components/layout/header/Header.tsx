@@ -3,10 +3,11 @@
 import Container from "../Container";
 import Logo from "./Logo";
 import NavBar from "./NavBar";
+import type { Dispatch, SetStateAction } from "react";
 
 type HeaderProps = {
     activeSection: string;
-    setActiveSection: (section: string) => void;
+    setActiveSection: Dispatch<SetStateAction<string>>;
 };
 
 export default function Header({ activeSection, setActiveSection }: HeaderProps) {

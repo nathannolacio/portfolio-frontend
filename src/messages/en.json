@@ -11,20 +11,20 @@
       "word1": "Hi!",
       "word2": "I'm"
     },
-    "title": "I build software solutions for <highlight>real problems</highlight> — that's my purpose.",
-    "description": "If you are looking for thoughtful development focused on real impact, you just found it.",
-    "contactButton": "Let's talk!",
+    "title": "I build software that solves <highlight>real-world problems</highlight>.",
+    "description": "Full Stack Developer focused on building scalable, user-centered applications that deliver real value.",
+    "contactButton": "Let's Talk",
     "cvButton": "Download CV"
   },
 
   "About": {
     "title": "About Me",
-    "description": "A passionate developer focused on building clean, user-centered experiences.",
+    "description": "Driven by curiosity, continuous learning, and a passion for turning complex problems into simple solutions.",
 
     "whoIam": {
       "title": "Who I am",
-      "paragraph1": "I’m a Full Stack Developer focused on building real-world solutions through technology. I enjoy creating scalable and user-focused applications, turning ideas into practical and efficient products.",
-      "paragraph2": "With experience across both backend and frontend technologies, I’m able to develop complete end-to-end applications, from system architecture and APIs to responsive interfaces and user experience."
+      "paragraph1": "I’m a Full Stack Developer with a strong interest in software architecture, backend development, and building solutions that solve real-world problems. I enjoy turning ideas into reliable and scalable applications.",
+      "paragraph2": "Working across both backend and frontend technologies allows me to build complete end-to-end applications, from designing APIs and business logic to creating intuitive and responsive user interfaces."
     },
 
     "skills": {
@@ -37,7 +37,7 @@
 
   "Projects": {
     "title": "Projects",
-    "description": "Some of the projects I’ve built through study, curiosity, and real-world problem solving.",
+    "description": "Projects built to solve real-world problems, explore new technologies, and continuously improve as a developer.",
     "moreAbout": "More about",
     "modal": {
       "close": "Close modal",
@@ -53,12 +53,11 @@
     },
     "type": {
       "realProject": "Real Project",
-      "studyProject": "Study Project"
+      "studyProject": "Learning Project"
     },
     "status": {
       "inProgress": "In Progress",
-      "completed": "Completed",
-      "mvp": "MVP"
+      "completed": "Completed"
     },
     "category": {
       "system": "System",
@@ -69,10 +68,13 @@
       "api": "API",
       "mobileApp": "Mobile App"
     },
-    "myBalance": {
-      "title": "My Balance",
-      "shortDescription": "Personal finance management backend API built with Spring Boot.",
-      "fullDescription": "My Balance is a backend application designed to help users manage personal finances through transaction tracking, balance calculation, account management, and financial organization. The project was built using Spring Boot and follows a layered architecture focused on scalability, maintainability, and clean backend development practices.",
+
+    "meuSaldo": {
+      "title": "Meu Saldo",
+      "shortDescription": "Personal finance management API designed to help users track transactions and monitor their financial health.",
+
+      "fullDescription": "My Balance is a personal finance management application that helps users organize their finances through transaction tracking, balance monitoring, and account management. The project focuses on providing better financial visibility while applying backend development best practices, including secure authentication, scalable architecture, and maintainable code structure.",
+
       "features": {
         "transactionManagement": "Transaction management",
         "balanceCalculation": "Balance calculation",
@@ -81,14 +83,14 @@
         "restApiArchitecture": "REST API architecture",
         "environmentBasedConfiguration": "Environment-based configuration",
         "layeredBackendArchitecture": "Layered backend architecture",
-        "jwtAuthenticationStructure": "JWT authentication structure",
-        "ciWorkflowIntegration": "CI workflow integration"
+        "jwtAuthenticationStructure": "JWT authentication",
+        "ciWorkflowIntegration": "CI/CD integration"
       }
     },
     "lottus": {
       "title": "Lottus",
       "shortDescription": "Academic library management platform built with Clean Architecture, Redis caching, and asynchronous processing.",
-      "fullDescription": "Lottus is a fullstack academic library management platform developed with a scalable backend architecture focused on performance, maintainability, and separation of concerns. The backend follows Clean Architecture principles and integrates Redis caching, RabbitMQ asynchronous processing, JWT authentication, and Dockerized infrastructure to support modern enterprise-like workflows.",
+      "fullDescription": "Lottus is a full-stack academic library management platform developed with a scalable backend architecture focused on performance, maintainability, and separation of concerns. The backend follows Clean Architecture principles and integrates Redis caching, RabbitMQ asynchronous processing, JWT authentication, and Dockerized infrastructure to support modern enterprise-grade development practices.",
       "features": {
         "cleanArchitecture": "Clean Architecture",
         "redisCacheLayer": "Redis cache layer",
@@ -105,8 +107,8 @@
     },
     "lottusMobile": {
       "title": "Lottus Mobile",
-      "shortDescription": "Mobile-oriented reading management platform for parents and students.",
-      "fullDescription": "Lottus Mobile is a fullstack mobile platform designed to help parents track and manage their children's school reading activities. The ecosystem includes a secure backend API built with Spring Boot and a mobile application developed with React Native, focusing on authentication security, modular architecture, and scalable mobile-first experiences.",
+      "shortDescription": "Mobile reading management platform designed for parents and students.",
+      "fullDescription": "Lottus Mobile is a full-stack platform designed to help parents track and manage their children's school reading activities. The project includes a secure Spring Boot backend API and a React Native mobile application, focusing on authentication security, modular architecture, and scalable mobile-first experiences.",
       "features": {
         "mobileApplicationForParents": "Mobile application for parents",
         "jwtAuthentication": "JWT authentication",
@@ -122,33 +124,33 @@
         "mobileFirstUserExperience": "Mobile-first user experience"
       }
     },
-    "kingdomRoster": {
-      "title": "Kingdom Roster",
-      "shortDescription": "Church ministry scheduling system focused on organization, planning, and team management.",
-      "fullDescription": "Escala do Reino is a personal project created to help churches organize ministry schedules and manage volunteer teams more efficiently. The system is being developed with a scalable backend architecture, focusing on authentication, role-based access control, schedule management, and long-term architectural evolution using modern Spring Boot practices.",
+    "escalaDoReino": {
+      "title": "Escala do Reino",
+      "shortDescription": "Church ministry scheduling platform designed to simplify team organization and service planning.",
+      "fullDescription": "Escala do Reino is a personal project designed to help churches organize ministry schedules, coordinate volunteer teams, and improve service planning. The platform focuses on providing a secure and scalable foundation through role-based access control, schedule management, and modern backend development practices built with Spring Boot.",
       "features": {
         "jwtAuthentication": "JWT authentication",
         "roleBasedAccessControl": "Role-based access control",
-        "churchMinistryScheduling": "Church ministry scheduling",
+        "churchMinistryScheduling": "Ministry scheduling",
         "memberTeamManagement": "Member and team management",
-        "calendarVisualization": "Calendar visualization",
+        "calendarVisualization": "Calendar view",
         "dashboardOverview": "Dashboard overview",
         "restApiArchitecture": "REST API architecture",
         "flywayDatabaseMigrations": "Flyway database migrations",
         "dockerizedDatabaseSetup": "Dockerized database setup",
         "swaggerApiDocumentation": "Swagger API documentation",
         "layeredArchitecture": "Layered architecture",
-        "scalableBackendFoundation": "Scalable backend foundation"
+        "scalableBackendFoundation": "Scalable backend architecture"
       }
     },
     "portfolio": {
       "title": "Portfolio",
-      "shortDescription": "Fullstack developer portfolio featuring a modular Spring Boot backend CMS and a modern frontend built with Next.js and React.",
-      "fullDescription": "This project was designed to showcase real-world fullstack development practices through a scalable portfolio platform. The frontend focuses on reusable UI components, responsive design, and modern user experience principles using Next.js and React. The backend is being developed with a modular monolith architecture using Spring Boot, providing a custom CMS experience for dynamically managing portfolio content, authentication, and contact email communication. The project emphasizes scalability, maintainability, clean organization, and real-world application architecture.",
+      "shortDescription": "Personal developer portfolio showcasing projects, skills, and a custom CMS built with Spring Boot, Next.js, and React.",
+      "fullDescription": "This portfolio was designed to showcase my projects, technical skills, and approach to software development through a modern full-stack application. The frontend is built with Next.js and React, focusing on responsive design, reusable components, and user experience. The backend is being developed with Spring Boot using a modular monolith architecture, providing a custom CMS for managing portfolio content, authentication, and contact communication. The project emphasizes scalability, maintainability, and real-world software engineering practices.",
       "features": {
-        "responsiveLandingPage": "Responsive landing page",
+        "responsiveLandingPage": "Responsive design",
         "reusableUiComponents": "Reusable UI components",
-        "projectsShowcaseSection": "Projects showcase section",
+        "projectsShowcaseSection": "Projects showcase",
         "aboutSection": "About section",
         "contactSection": "Contact section",
         "modularMonolithBackendArchitecture": "Modular monolith backend architecture",
@@ -157,17 +159,17 @@
         "protectedAdminRoutes": "Protected admin routes",
         "contactEmailService": "Contact email service",
         "portfolioCmsManagement": "Portfolio CMS management",
-        "dynamicPortfolioContentManagement": "Dynamic portfolio content management",
+        "dynamicPortfolioContentManagement": "Dynamic content management",
         "environmentBasedConfiguration": "Environment-based configuration",
-        "dockerizedApplicationSetup": "Dockerized application setup",
-        "scalableFrontendBackendStructure": "Scalable frontend and backend structure"
+        "dockerizedApplicationSetup": "Dockerized deployment setup",
+        "scalableFrontendBackendStructure": "Scalable full-stack architecture"
       }
     }
   },
 
   "Contact": {
     "title": "Get in Touch",
-    "description": "Have a question or want to work together? Send me a message.",
+    "description": "Have a project in mind, a question, or an opportunity to discuss? Let's connect.",
 
     "form": {
       "name": "Name",
@@ -177,8 +179,8 @@
       "sending": "Sending...",
       "namePlaceholder": "Your name",
       "emailPlaceholder": "your.email@example.com",
-      "messagePlaceholder": "Your message here...",
-      "successMessage": "Message sent successfully!",
+      "messagePlaceholder": "Tell me about your project, question, or idea...",
+      "successMessage": "Thanks for reaching out! I'll get back to you soon.",
       "errorMessage": "Failed to send message. Please try again."
     }
   },

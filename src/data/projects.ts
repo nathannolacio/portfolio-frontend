@@ -38,9 +38,9 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: 1,
-    title: "myBalance.title",
-    shortDescription: "myBalance.shortDescription",
-    fullDescription: "myBalance.fullDescription",
+    title: "meuSaldo.title",
+    shortDescription: "meuSaldo.shortDescription",
+    fullDescription: "meuSaldo.fullDescription",
     preview: "/projects/meu-saldo/preview.png",
     type: "Study Project",
     category: "API",
@@ -56,15 +56,15 @@ export const projects: Project[] = [
       "Tailwind CSS"
     ],
     features: [
-      "myBalance.features.transactionManagement",
-      "myBalance.features.balanceCalculation",
-      "myBalance.features.userManagement",
-      "myBalance.features.bankAccountManagement",
-      "myBalance.features.restApiArchitecture",
-      "myBalance.features.environmentBasedConfiguration",
-      "myBalance.features.layeredBackendArchitecture",
-      "myBalance.features.jwtAuthenticationStructure",
-      "myBalance.features.ciWorkflowIntegration"
+      "meuSaldo.features.transactionManagement",
+      "meuSaldo.features.balanceCalculation",
+      "meuSaldo.features.userManagement",
+      "meuSaldo.features.bankAccountManagement",
+      "meuSaldo.features.restApiArchitecture",
+      "meuSaldo.features.environmentBasedConfiguration",
+      "meuSaldo.features.layeredBackendArchitecture",
+      "meuSaldo.features.jwtAuthenticationStructure",
+      "meuSaldo.features.ciWorkflowIntegration"
     ],
     status: "In Progress",
     githubUrl: "https://github.com/meu-saldo",
@@ -147,9 +147,9 @@ export const projects: Project[] = [
   },
   {
     id: 4,
-    title: "kingdomRoster.title",
-    shortDescription: "kingdomRoster.shortDescription",
-    fullDescription: "kingdomRoster.fullDescription",
+    title: "escalaDoReino.title",
+    shortDescription: "escalaDoReino.shortDescription",
+    fullDescription: "escalaDoReino.fullDescription",
     preview: "/projects/escala-do-reino/escala-do-reino-preview.png",
     type: "Real Project",
     category: "System",
@@ -167,18 +167,18 @@ export const projects: Project[] = [
       "Swagger"
     ],
     features: [
-      "kingdomRoster.features.jwtAuthentication",
-      "kingdomRoster.features.roleBasedAccessControl",
-      "kingdomRoster.features.churchMinistryScheduling",
-      "kingdomRoster.features.memberTeamManagement",
-      "kingdomRoster.features.calendarVisualization",
-      "kingdomRoster.features.dashboardOverview",
-      "kingdomRoster.features.restApiArchitecture",
-      "kingdomRoster.features.flywayDatabaseMigrations",
-      "kingdomRoster.features.dockerizedDatabaseSetup",
-      "kingdomRoster.features.swaggerApiDocumentation",
-      "kingdomRoster.features.layeredArchitecture",
-      "kingdomRoster.features.scalableBackendFoundation"
+      "escalaDoReino.features.jwtAuthentication",
+      "escalaDoReino.features.roleBasedAccessControl",
+      "escalaDoReino.features.churchMinistryScheduling",
+      "escalaDoReino.features.memberTeamManagement",
+      "escalaDoReino.features.calendarVisualization",
+      "escalaDoReino.features.dashboardOverview",
+      "escalaDoReino.features.restApiArchitecture",
+      "escalaDoReino.features.flywayDatabaseMigrations",
+      "escalaDoReino.features.dockerizedDatabaseSetup",
+      "escalaDoReino.features.swaggerApiDocumentation",
+      "escalaDoReino.features.layeredArchitecture",
+      "escalaDoReino.features.scalableBackendFoundation"
     ],
     githubUrl: "https://github.com/your-user/escala-do-reino",
     status: "In Progress"

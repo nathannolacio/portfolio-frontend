@@ -47,7 +47,7 @@ export default function AboutSection() {
                 </div>
 
                 <div className="mt-12">
-                    <h3 className="text-lg font-semibold text-zinc-800 mb-6">Skills</h3>
+                    <h3 className="text-lg font-semibold text-zinc-800 mb-6">{t("skills.title")}</h3>
                     <div className="flex flex-col gap-8">
                         {skillGroups.map(({ title, skills }) => (
                             <div key={title}>

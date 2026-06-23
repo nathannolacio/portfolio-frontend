@@ -21,7 +21,7 @@ export default function Footer({ setActiveSection }: FooterProps) {
                     <Logo />
                     <div>
                         <p className="font-medium text-lg text-center md:text-left">{t("cta")}</p>
-                        <a className="font-medium break-all" href="mailto:nathannolacio04@gmail.com">nathannolacio04@gmail.com</a>
+                        <a className="font-medium break-all" href="mailto:nathannolacio04@gmail.com">nathannolacio.dev@gmail.com</a>
                     </div>
                     <p className="font-semibold text-sm text-center md:text-left">{t("copy", { year: currentYear })}</p>
                     

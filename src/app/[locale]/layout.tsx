@@ -1,16 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Space_Grotesk } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-
-const geist = Geist({
-  subsets: ["latin"],
-});
-
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-space-grotesk",
-});
 
 export const metadata: Metadata = {
   title: "Nathan Nolacio | Software Developer",
@@ -35,7 +25,7 @@ export default async function LocaleLayout({
       messages={messages}
     >
       <div
-        className={`${geist.className} ${spaceGrotesk.variable} min-h-screen flex flex-col bg-neutral-50 text-zinc-800 h-full antialiased`}
+        className="min-h-screen flex flex-col bg-bg text-text h-full antialiased"
       >
         {children}
       </div>

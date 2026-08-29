@@ -11,9 +11,9 @@ type LogoProps = {
 
 export default function Logo({ setActiveSectionAction, clickable = false }: LogoProps) {
     const content = (
-        <div className="font-(--font-space-grotesk) font-bold text-3xl tracking-tight">
+        <div className="font-display font-medium text-3xl tracking-tight">
             <span>Nolacio</span>
-            <span className="text-lime-600">.dev</span>
+            <span className="text-accent">.dev</span>
         </div>
     )
 

@@ -7,9 +7,9 @@ type StatusBadgeProps = {
 };
 
 const statusStyles: Record<StatusBadgeProps["status"], string> = {
-    "In Progress": "bg-amber-50/70 text-amber-600 border-amber-100",
-    "Completed": "bg-emerald-50/70 text-emerald-600 border-emerald-100",
-    "MVP": "bg-sky-50/70 text-sky-600 border-sky-100",
+    "In Progress": "bg-surface text-text-muted border-border",
+    "Completed": "bg-surface text-text-muted border-border",
+    "MVP": "bg-surface text-text-muted border-border",
 };
 
 const statusTranslationKeys: Record<StatusBadgeProps["status"], string> = {

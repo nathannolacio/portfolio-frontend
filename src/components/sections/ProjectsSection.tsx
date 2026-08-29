@@ -20,7 +20,7 @@ export default function ProjectsSection() {
                     <SectionTitle>
                         {t("title")}
                     </SectionTitle>
-                    <p className="text-lg md:text-xl mt-2 text-slate-600">
+                    <p className="text-lg md:text-xl mt-2 text-text-muted">
                         {t("description")}
                     </p>
                 </div>

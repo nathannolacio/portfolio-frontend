@@ -11,13 +11,14 @@ export default function ContactSection() {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
+        reason: "",
         message: "",
     });
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
 
     const handleChange = (
-        e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+        e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
     ) => {
         const { name, value } = e.target;
         setFormData((prev) => ({
@@ -48,6 +49,7 @@ export default function ContactSection() {
             setFormData({
                 name: "",
                 email: "",
+                reason: "",
                 message: "",
             });
 
@@ -72,17 +74,17 @@ export default function ContactSection() {
                     <SectionTitle>
                         {t("title")}
                     </SectionTitle>
-                    <p className="text-lg md:text-xl mt-2 text-zinc-600">
+                    <p className="text-lg md:text-xl mt-2 text-text-muted">
                         {t("description")}
                     </p>
                 </div>
 
-                <div className="w-full max-w-4xl rounded-lg border-2 border-zinc-200 bg-neutral-50 p-8 shadow-lg">
+                <div className="w-full max-w-4xl rounded-sm border border-border bg-surface p-8">
                     <form onSubmit={handleSubmit} className="flex flex-col gap-6 items-center">
                         <div className="flex flex-col gap-2 w-full">
                             <label
                                 htmlFor="name"
-                                className="text-sm font-semibold text-zinc-700"
+                                className="text-sm font-semibold text-text"
                             >
                                 {t("form.name")}
                             </label>
@@ -94,14 +96,14 @@ export default function ContactSection() {
                                 onChange={handleChange}
                                 required
                                 placeholder={t("form.namePlaceholder")}
-                                className="rounded-lg border-2 border-zinc-200 bg-neutral-50 px-4 py-2 text-zinc-900 placeholder-zinc-400 transition-colors focus:border-zinc-400 focus:outline-none"
+                                className="rounded-sm border border-border bg-bg px-4 py-2 text-text placeholder-text-muted transition-colors focus:border-accent focus:outline-none"
                             />
                         </div>
 
                         <div className="flex flex-col gap-2 w-full">
                             <label
                                 htmlFor="email"
-                                className="text-sm font-semibold text-zinc-700"
+                                className="text-sm font-semibold text-text"
                             >
                                 {t("form.email")}
                             </label>
@@ -113,14 +115,36 @@ export default function ContactSection() {
                                 onChange={handleChange}
                                 required
                                 placeholder={t("form.emailPlaceholder")}
-                                className="rounded-lg border-2 border-zinc-200 bg-neutral-50 px-4 py-2 text-zinc-900 placeholder-zinc-400 transition-colors focus:border-zinc-400 focus:outline-none"
+                                className="rounded-sm border border-border bg-bg px-4 py-2 text-text placeholder-text-muted transition-colors focus:border-accent focus:outline-none"
                             />
                         </div>
 
                         <div className="flex flex-col gap-2 w-full">
                             <label
+                                htmlFor="reason"
+                                className="text-sm font-semibold text-text"
+                            >
+                                {t("form.reason")}
+                            </label>
+                            <select
+                                id="reason"
+                                name="reason"
+                                value={formData.reason}
+                                onChange={handleChange}
+                                required
+                                className="rounded-sm border border-border bg-bg px-4 py-2 text-text transition-colors focus:border-accent focus:outline-none"
+                            >
+                                <option value="" disabled>{t("form.reasonPlaceholder")}</option>
+                                <option value="job">{t("form.reasonOptions.job")}</option>
+                                <option value="freelance">{t("form.reasonOptions.freelance")}</option>
+                                <option value="other">{t("form.reasonOptions.other")}</option>
+                            </select>
+                        </div>
+
+                        <div className="flex flex-col gap-2 w-full">
+                            <label
                                 htmlFor="message"
-                                className="text-sm font-semibold text-zinc-700"
+                                className="text-sm font-semibold text-text"
                             >
                                 {t("form.message")}
                             </label>
@@ -132,13 +156,12 @@ export default function ContactSection() {
                                 required
                                 placeholder={t("form.messagePlaceholder")}
                                 rows={6}
-                                className="rounded-lg border-2 border-zinc-200 bg-neutral-50 px-4 py-2 text-zinc-900 placeholder-zinc-400 transition-colors focus:border-zinc-400 focus:outline-none resize-none"
+                                className="rounded-sm border border-border bg-bg px-4 py-2 text-text placeholder-text-muted transition-colors focus:border-accent focus:outline-none resize-none"
                             />
                         </div>
 
                         <div className="flex items-center gap-4">
                             <Button
-                                color="cyan"
                                 type="submit"
                                 className={isSubmitting ? "opacity-50 cursor-not-allowed pointer-events-none" : ""}
                             >

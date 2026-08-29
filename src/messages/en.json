@@ -3,6 +3,7 @@
     "home": "Home",
     "about": "About",
     "projects": "Projects",
+    "services": "Services",
     "contact": "Contact"
   },
 
@@ -12,14 +13,20 @@
       "word2": "I'm"
     },
     "title": "I build software that solves <highlight>real-world problems</highlight>.",
-    "description": "Full Stack Developer focused on building scalable, user-centered applications that deliver real value.",
-    "contactButton": "Let's Talk",
-    "cvButton": "Download CV"
+    "description": "Full Stack Developer. Whether joining a team or building from scratch, my job is turning a business need into working software.",
+    "contactButton": "I Need a Project",
+    "cvButton": "View Resume"
   },
 
   "About": {
     "title": "About Me",
     "description": "Driven by curiosity, continuous learning, and a passion for turning complex problems into simple solutions.",
+
+    "highlights": {
+      "role": "Full Stack",
+      "focus": "Backend & architecture focus",
+      "availability": "Open to jobs & freelance"
+    },
 
     "whoIam": {
       "title": "Who I am",
@@ -57,7 +64,8 @@
     },
     "status": {
       "inProgress": "In Progress",
-      "completed": "Completed"
+      "completed": "Completed",
+      "mvp": "MVP"
     },
     "category": {
       "system": "System",
@@ -167,6 +175,32 @@
     }
   },
 
+  "Services": {
+    "title": "Services",
+    "description": "I help businesses and founders turn ideas and internal needs into working software — from a single API to a full product.",
+    "bullets": {
+      "apis": "APIs & backend systems built for reliability, security, and room to grow.",
+      "webApps": "Full-stack web systems, from internal tools to customer-facing platforms.",
+      "mvps": "MVPs that get a real product in front of real users, fast."
+    },
+    "process": {
+      "title": "How it works",
+      "step1": {
+        "title": "Briefing",
+        "description": "We talk through your goal, constraints, and what success looks like."
+      },
+      "step2": {
+        "title": "Proposal",
+        "description": "You get a clear scope, timeline, and price before anything starts."
+      },
+      "step3": {
+        "title": "Delivery",
+        "description": "I build, keep you updated, and hand off working, documented software."
+      }
+    },
+    "cta": "Request a Quote"
+  },
+
   "Contact": {
     "title": "Get in Touch",
     "description": "Have a project in mind, a question, or an opportunity to discuss? Let's connect.",
@@ -174,6 +208,13 @@
     "form": {
       "name": "Name",
       "email": "Email",
+      "reason": "Reason for contact",
+      "reasonPlaceholder": "Select a reason",
+      "reasonOptions": {
+        "job": "Job opportunity",
+        "freelance": "Freelance project",
+        "other": "Other"
+      },
       "message": "Message",
       "button": "Send Message",
       "sending": "Sending...",

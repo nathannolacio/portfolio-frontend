@@ -7,7 +7,6 @@ export default function HeroActions() {
     return (
         <div className="flex flex-col md:flex-row w-full justify-around md:items-center gap-6 md:w-fit md:gap-10">
             <Button
-                color="cyan"
                 variant="outline"
                 className="md:order-2"
                 href="/CV_NathanNolacio_TI_Geral.pdf"
@@ -17,10 +16,9 @@ export default function HeroActions() {
                 {t("cvButton")}
             </Button>
             <Button
-                color="cyan"
                 variant="primary"
                 className="md:order-1"
-                href="#contact"
+                href="#services"
             >
                 {t("contactButton")}
             </Button>

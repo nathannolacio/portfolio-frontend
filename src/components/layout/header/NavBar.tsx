@@ -4,6 +4,7 @@ import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
 import NavigationLinks from '../../navigation/NavigationLinks';
+import SocialLinks from '../../navigation/SocialLinks';
 
 type NavBarProps = {
     activeSection?: string;
@@ -17,14 +18,16 @@ export default function NavBar({ activeSection, setActiveSection }: NavBarProps)
 
     return(
         <>
-            <nav className="hidden md:flex justify-center my-4">
+            <nav className="hidden md:flex items-center justify-center gap-6 my-4">
                 <NavigationLinks
                     activeSection={activeSection}
                     setActiveSection={setActiveSection}
                     listClassName="flex gap-6 font-semibold"
-                    linkClassName="hover:text-lime-600 transition-colors duration-300"
-                    activeLinkClassName="text-lime-600"
+                    linkClassName="hover:text-accent transition-colors duration-300"
+                    activeLinkClassName="text-accent"
                 />
+                <span className="h-4 w-px bg-border" aria-hidden="true" />
+                <SocialLinks className="flex items-center gap-4" />
             </nav>
 
             <nav className='md:hidden w-full flex flex-col items-end gap-4 my-4'>
@@ -39,15 +42,16 @@ export default function NavBar({ activeSection, setActiveSection }: NavBarProps)
                 </button>
 
                 {isMenuOpen && (
-                   <div id='mobile-navigation-menu'>
+                   <div id='mobile-navigation-menu' className='flex flex-col items-end gap-4'>
                         <NavigationLinks
                             activeSection={activeSection}
                             setActiveSection={setActiveSection}
                             setIsMenuOpen={setIsMenuOpen}
-                            listClassName="flex flex-col gap-2 font-semibold"
-                            linkClassName="hover:text-lime-600 transition-colors duration-500"
-                            activeLinkClassName="text-lime-600"
+                            listClassName="flex flex-col gap-2 font-semibold items-end"
+                            linkClassName="hover:text-accent transition-colors duration-500"
+                            activeLinkClassName="text-accent"
                         />
+                        <SocialLinks className="flex items-center gap-4" />
                    </div>
                 )}
             </nav>

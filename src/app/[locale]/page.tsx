@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import HomeSection from "../../components/sections/HomeSection";
 import ProjectsSection from "../../components/sections/ProjectsSection";
 import AboutSection from "../../components/sections/AboutSection";
+import ServicesSection from "../../components/sections/ServicesSection";
 import ContactSection from "../../components/sections/ContactSection";
 
 export default function Home() {
@@ -33,6 +34,7 @@ export default function Home() {
         <HomeSection />
         <AboutSection />
         <ProjectsSection />
+        <ServicesSection />
         <ContactSection />
       </main>
       <Footer

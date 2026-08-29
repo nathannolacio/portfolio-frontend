@@ -3,6 +3,7 @@
     "home": "Início",
     "about": "Sobre",
     "projects": "Projetos",
+    "services": "Serviços",
     "contact": "Contato"
   },
 
@@ -12,14 +13,20 @@
       "word2": "Eu sou"
     },
     "title": "Transformo <highlight>problemas reais</highlight> em soluções de software.",
-    "description": "Desenvolvedor Full Stack focado em construir aplicações escaláveis, com foco no usuário e impacto real.",
-    "contactButton": "Vamos Conversar",
-    "cvButton": "Baixar CV"
+    "description": "Desenvolvedor Full Stack. Seja como parte de um time, seja construindo do zero, meu trabalho é transformar a necessidade de um negócio em software funcionando.",
+    "contactButton": "Preciso de um Projeto",
+    "cvButton": "Ver Currículo"
   },
 
   "About": {
     "title": "Sobre Mim",
     "description": "Movido pela curiosidade, pelo aprendizado contínuo e pela vontade de transformar problemas complexos em soluções simples.",
+
+    "highlights": {
+      "role": "Full Stack",
+      "focus": "Foco em backend & arquitetura",
+      "availability": "Aberto a vagas e freelance"
+    },
 
     "whoIam": {
       "title": "Quem Sou",
@@ -57,7 +64,8 @@
     },
     "status": {
       "inProgress": "Em Desenvolvimento",
-      "completed": "Concluído"
+      "completed": "Concluído",
+      "mvp": "MVP"
     },
     "category": {
       "system": "Sistema",
@@ -167,6 +175,32 @@
     }
   },
 
+  "Services": {
+    "title": "Serviços",
+    "description": "Ajudo empresas e founders a transformar ideias e necessidades internas em software funcionando — de uma API única a um produto completo.",
+    "bullets": {
+      "apis": "APIs e sistemas backend construídos para confiabilidade, segurança e escalabilidade.",
+      "webApps": "Sistemas web full-stack, de ferramentas internas a plataformas voltadas ao cliente.",
+      "mvps": "MVPs que colocam um produto real na mão de usuários reais, rapidamente."
+    },
+    "process": {
+      "title": "Como funciona",
+      "step1": {
+        "title": "Briefing",
+        "description": "Conversamos sobre seu objetivo, restrições e o que significa sucesso para o projeto."
+      },
+      "step2": {
+        "title": "Proposta",
+        "description": "Você recebe escopo, prazo e valor claros antes de qualquer início."
+      },
+      "step3": {
+        "title": "Entrega",
+        "description": "Eu desenvolvo, mantenho você atualizado e entrego software funcionando e documentado."
+      }
+    },
+    "cta": "Solicitar Orçamento"
+  },
+
   "Contact": {
     "title": "Entre em Contato",
     "description": "Tem um projeto em mente, uma dúvida ou uma oportunidade para discutir? Vamos nos conectar.",
@@ -174,6 +208,13 @@
      "form": {
       "name": "Nome",
       "email": "E-mail",
+      "reason": "Motivo do contato",
+      "reasonPlaceholder": "Selecione um motivo",
+      "reasonOptions": {
+        "job": "Vaga / oportunidade de emprego",
+        "freelance": "Projeto freelance",
+        "other": "Outro"
+      },
       "message": "Mensagem",
       "button": "Enviar Mensagem",
       "sending": "Enviando...",

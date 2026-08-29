@@ -16,7 +16,7 @@ export default function TypeBadge({ type }: TypeProps) {
     return (
         <Badge 
             text={t(typeTranslationKeys[type])}
-            className="text-lime-600 border-lime-400 bg-lime-100/70"
+            className="text-accent border-accent/40 bg-accent-soft"
         />
     );
 }

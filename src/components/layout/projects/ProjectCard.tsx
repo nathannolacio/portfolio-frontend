@@ -25,31 +25,30 @@ export default function ProjectCard({
     const t = useTranslations("Projects");
 
   return (
-    <div className="bg-neutral-50 border border-zinc-300 rounded-lg shadow-md hover:shadow-lg transition-shadow p-4 h-full flex flex-col gap-4">
+    <div className="bg-surface border border-border rounded-sm hover:border-text/40 transition-colors p-4 h-full flex flex-col gap-4">
 
         <div className="flex justify-between items-center">
             <TypeBadge type={type} />
             <StatusBadge status={status} />
         </div>
-        
-        <div className="relative flex items-center justify-center h-42 bg-zinc-200 rounded-md overflow-hidden border border-zinc-200">
+
+        <div className="relative flex items-center justify-center h-42 bg-surface-2 rounded-sm overflow-hidden border border-border">
             {preview ? (
                 <Image src={preview} alt={t(title)} fill className="object-cover" />
                 ) : (
-                <FaRegImage className="text-4xl text-gray-400" />
+                <FaRegImage className="text-4xl text-text-muted" />
             )}
         </div>
 
         <div className="flex-1">
-            <h3 className="font-semibold text-lg mb-2">{t(title)}</h3>
-            <p className="text-gray-600 text-sm">{t(shortDescription)}</p>
+            <h3 className="font-display font-medium text-lg mb-2">{t(title)}</h3>
+            <p className="text-text-muted text-sm">{t(shortDescription)}</p>
         </div>
 
         <div className="mt-auto">
-            <Button 
+            <Button
                 size="sm"
                 variant="outline"
-                color="lime"
                 onClick={onDetailsClick}
             >
                 {t("moreAbout")}

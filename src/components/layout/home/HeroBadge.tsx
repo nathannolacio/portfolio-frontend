@@ -8,17 +8,17 @@ export default function HeroBadge({ name }: HeroBadgeProps) {
     const t = useTranslations("Hero.badge");
 
     return (
-        <div 
-            className="w-fit rounded-lg py-1 text-sm/6 bg-zinc-800"
+        <div
+            className="w-fit rounded-sm py-1 text-sm/6 font-mono bg-text"
         >
             <p className="px-2">
-                <span className="text-lime-600 bg-lime-100 rounded-md ring-1 ring-lime-600/60 mr-1 w-fit px-1 font-medium">
+                <span className="text-accent bg-accent-soft rounded-sm ring-1 ring-accent/40 mr-1 w-fit px-1 font-medium">
                     {`<${t("word1")}>`}
                 </span>
-                <span className="text-zinc-200 mr-1">
+                <span className="text-bg/70 mr-1">
                     {t("word2")}
                 </span>
-                <span className="text-neutral-50 font-medium">
+                <span className="text-bg font-medium">
                     {name}
                 </span>
             </p>

@@ -28,8 +28,8 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
   const projectCategory = t(categoryTranslationKeys[project.category]);
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-zinc-800/80 p-4">
-        <div className="relative flex flex-col gap-6 w-full max-w-6xl max-h-[calc(100vh-4rem)] overflow-y-auto rounded-3xl bg-neutral-50 p-8">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-text/80 p-4">
+        <div className="relative flex flex-col gap-6 w-full max-w-6xl max-h-[calc(100vh-4rem)] overflow-y-auto rounded-sm bg-bg p-8">
 
             <Button 
                 variant="ghost"
@@ -43,13 +43,13 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
 
             <div className="flex flex-col gap-4 sm:flex-row items-center justify-between">
                 <div className="flex flex-col items-center md:flex-row gap-6">
-                    <h2 className="text-2xl font-semibold text-slate-900">{projectTitle}</h2>
+                    <h2 className="font-display font-medium text-2xl text-text">{projectTitle}</h2>
 
                     <div className="flex flex-wrap gap-4 justify-center items-center md:justify-end">
                         <TypeBadge type={project.type} />
-                        <Badge 
+                        <Badge
                             text={projectCategory}
-                            className="border-zinc-400 bg-zinc-100/70 text-zinc-500"
+                            className="border-border bg-surface text-text-muted"
                         />
                         <StatusBadge status={project.status} />
                     </div>
@@ -59,64 +59,64 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
             <div className="grid gap-6 lg:grid-cols-[320px_minmax(0,1fr)]">
 
                 {/* Overview + Technologies block  */}
-                <div className="flex flex-col gap-8 rounded-3xl border border-zinc-200 p-4 shadow-sm">
-                    
-                    <div className="relative h-56 overflow-hidden rounded-3xl bg-zinc-100 border border-zinc-200">
+                <div className="flex flex-col gap-8 rounded-sm border border-border p-4">
+
+                    <div className="relative h-56 overflow-hidden rounded-sm bg-surface border border-border">
                         {project.preview ? (
                             <Image src={project.preview} alt={projectTitle} fill className="object-cover" />
                         ) : (
-                            <div className="flex h-full items-center justify-center text-zinc-400">
+                            <div className="flex h-full items-center justify-center text-text-muted">
                                 {t("modal.noPreview")}
                             </div>
                         )}
                     </div>
                     <div className="flex flex-col gap-4">
                         <div>
-                            <p className="text-sm font-semibold text-slate-500 uppercase tracking-[0.18em]">{t("modal.overview")}</p>    
-                            <p className="mt-2 text-slate-700">{t(project.shortDescription)}</p>
+                            <p className="font-mono text-sm font-semibold text-text-muted uppercase tracking-[0.18em]">{t("modal.overview")}</p>
+                            <p className="mt-2 text-text">{t(project.shortDescription)}</p>
                         </div>
                         <div>
-                            <p className="text-sm font-semibold text-slate-500 uppercase tracking-[0.18em]">{t("modal.technologies")}</p>
+                            <p className="font-mono text-sm font-semibold text-text-muted uppercase tracking-[0.18em]">{t("modal.technologies")}</p>
                             <div className="mt-3 flex flex-wrap gap-2">
                                 {project.technologies.map((tech) => (
                                     <Badge
                                         key={tech}
                                         text={tech}
-                                        className="border-zinc-300 bg-zinc-100 text-zinc-600"
+                                        className="border-border bg-surface text-text-muted"
                                     />
                                 ))}
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 {/* Description + Features + Images block */}
                 <div className="space-y-6">
-                    <div className="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm">
-                        <h3 className="text-lg font-semibold text-slate-900">{t("modal.description")}</h3>
-                        <p className="mt-3 text-slate-600 leading-7">{t(project.fullDescription)}</p>
+                    <div className="rounded-sm border border-border bg-surface p-6">
+                        <h3 className="text-lg font-semibold text-text">{t("modal.description")}</h3>
+                        <p className="mt-3 text-text-muted leading-7">{t(project.fullDescription)}</p>
                     </div>
 
                     <div className="gap-4">
-                        <div className="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm">
-                            <h4 className="text-sm font-semibold text-slate-900 uppercase tracking-[0.18em]">{t("modal.features")}</h4>
-                            <ul className="mt-3 space-y-2 text-slate-600">
+                        <div className="rounded-sm border border-border bg-surface p-6">
+                            <h4 className="font-mono text-sm font-semibold text-text uppercase tracking-[0.18em]">{t("modal.features")}</h4>
+                            <ul className="mt-3 space-y-2 text-text-muted">
                                 {project.features?.map((feature) => (
-                                    <li key={feature} className="flex gap-2">   
+                                    <li key={feature} className="flex gap-2">
                                         {t(feature)}
                                     </li>
                                 ))}
                             </ul>
                         </div>
-                        
+
                     </div>
 
                     {project.images?.length ? (
-                        <div className="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm">
-                            <h4 className="text-sm font-semibold text-slate-900 uppercase tracking-[0.18em]">{t("modal.images")}</h4>
+                        <div className="rounded-sm border border-border bg-surface p-6">
+                            <h4 className="font-mono text-sm font-semibold text-text uppercase tracking-[0.18em]">{t("modal.images")}</h4>
                             <div className="mt-4 grid gap-4 sm:grid-cols-2">
                                 {project.images.map((image) => (
-                                    <div key={image.id} className="relative h-40 overflow-hidden rounded-2xl bg-zinc-100">
+                                    <div key={image.id} className="relative h-40 overflow-hidden rounded-sm bg-surface">
                                         <Image src={image.src} alt={t("modal.imageAlt", { title: projectTitle })} fill className="object-cover" />
                                     </div>
                                 ))}
@@ -128,7 +128,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-end">
                 {project.liveUrl ? (
-                    <Button color="cyan" onClick={() => window.open(project.liveUrl, "_blank", "noopener,noreferrer")}>{t("modal.liveDemo")}</Button>
+                    <Button onClick={() => window.open(project.liveUrl, "_blank", "noopener,noreferrer")}>{t("modal.liveDemo")}</Button>
                 ) : null}
                 {project.githubUrl ? (
                     <Button variant="outline" onClick={() => window.open(project.githubUrl, "_blank", "noopener,noreferrer")}>{t("modal.github")}</Button>

@@ -12,7 +12,7 @@ export default function ServicesSection() {
     return (
         <section
             id="services"
-            className="py-12 md:py-16"
+            className="scroll-mt-20 py-12 md:py-16"
         >
             <Container>
                 <div className="mb-12">

@@ -67,7 +67,7 @@ export default function ContactSection() {
     return (
         <section
             id="contact"
-            className="py-12 md:py-16"
+            className="scroll-mt-20 py-12 md:py-16"
         >
             <Container className="flex flex-col items-center">
                 <div className="mb-12 text-center">

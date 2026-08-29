@@ -8,7 +8,7 @@ export default function HomeSection() {
     return (
         <section
             id="home"
-            className="overflow-x-hidden py-16 md:py-28"
+            className="overflow-x-hidden scroll-mt-20 py-16 md:py-28"
         >
             <Container className="flex flex-col items-center">
                 <div className="flex flex-col gap-8 md:gap-12 items-center max-w-3xl mx-auto">

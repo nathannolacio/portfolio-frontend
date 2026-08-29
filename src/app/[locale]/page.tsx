@@ -30,7 +30,7 @@ export default function Home() {
         activeSection={activeSection}
         setActiveSection={setActiveSection}
       />
-      <main className="flex flex-col">
+      <main className="flex flex-col pt-20">
         <HomeSection />
         <AboutSection />
         <ProjectsSection />

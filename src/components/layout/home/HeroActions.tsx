@@ -18,7 +18,7 @@ export default function HeroActions() {
             <Button
                 variant="primary"
                 className="md:order-1"
-                href="#services"
+                href="#contact"
             >
                 {t("contactButton")}
             </Button>

@@ -3,7 +3,6 @@
     "home": "Home",
     "about": "About",
     "projects": "Projects",
-    "services": "Services",
     "contact": "Contact"
   },
 
@@ -13,9 +12,9 @@
       "word2": "I'm"
     },
     "title": "I build software that solves <highlight>real-world problems</highlight>.",
-    "description": "Full Stack Developer. Whether joining a team or building from scratch, my job is turning a business need into working software.",
-    "contactButton": "I Need a Project",
-    "cvButton": "View Resume"
+    "description": "Full Stack Developer focused on building scalable, user-centered applications that deliver real value.",
+    "contactButton": "Let's Talk",
+    "cvButton": "Download CV"
   },
 
   "About": {
@@ -25,7 +24,7 @@
     "highlights": {
       "role": "Full Stack",
       "focus": "Backend & architecture focus",
-      "availability": "Open to jobs & freelance"
+      "availability": "Open to CLT & PJ opportunities"
     },
 
     "whoIam": {
@@ -75,130 +74,7 @@
       "dashboard": "Dashboard",
       "api": "API",
       "mobileApp": "Mobile App"
-    },
-
-    "meuSaldo": {
-      "title": "Meu Saldo",
-      "shortDescription": "Personal finance management API designed to help users track transactions and monitor their financial health.",
-
-      "fullDescription": "My Balance is a personal finance management application that helps users organize their finances through transaction tracking, balance monitoring, and account management. The project focuses on providing better financial visibility while applying backend development best practices, including secure authentication, scalable architecture, and maintainable code structure.",
-
-      "features": {
-        "transactionManagement": "Transaction management",
-        "balanceCalculation": "Balance calculation",
-        "userManagement": "User management",
-        "bankAccountManagement": "Bank account management",
-        "restApiArchitecture": "REST API architecture",
-        "environmentBasedConfiguration": "Environment-based configuration",
-        "layeredBackendArchitecture": "Layered backend architecture",
-        "jwtAuthenticationStructure": "JWT authentication",
-        "ciWorkflowIntegration": "CI/CD integration"
-      }
-    },
-    "lottus": {
-      "title": "Lottus",
-      "shortDescription": "Academic library management platform built with Clean Architecture, Redis caching, and asynchronous processing.",
-      "fullDescription": "Lottus is a full-stack academic library management platform developed with a scalable backend architecture focused on performance, maintainability, and separation of concerns. The backend follows Clean Architecture principles and integrates Redis caching, RabbitMQ asynchronous processing, JWT authentication, and Dockerized infrastructure to support modern enterprise-grade development practices.",
-      "features": {
-        "cleanArchitecture": "Clean Architecture",
-        "redisCacheLayer": "Redis cache layer",
-        "jwtAuthentication": "JWT authentication",
-        "asynchronousFileProcessing": "Asynchronous file processing",
-        "rabbitMqIntegration": "RabbitMQ message broker integration",
-        "dockerizedInfrastructure": "Dockerized infrastructure",
-        "swaggerApiDocumentation": "Swagger API documentation",
-        "restApiArchitecture": "REST API architecture",
-        "libraryLoanManagement": "Library loan management",
-        "digitalCatalogSystem": "Digital catalog system",
-        "studentClassManagement": "Student and class management"
-      }
-    },
-    "lottusMobile": {
-      "title": "Lottus Mobile",
-      "shortDescription": "Mobile reading management platform designed for parents and students.",
-      "fullDescription": "Lottus Mobile is a full-stack platform designed to help parents track and manage their children's school reading activities. The project includes a secure Spring Boot backend API and a React Native mobile application, focusing on authentication security, modular architecture, and scalable mobile-first experiences.",
-      "features": {
-        "mobileApplicationForParents": "Mobile application for parents",
-        "jwtAuthentication": "JWT authentication",
-        "googleOauth2Login": "Google OAuth2 login",
-        "refreshTokenRotation": "Refresh token rotation",
-        "loanManagement": "Loan management",
-        "studentEnrollmentValidation": "Student enrollment validation",
-        "swaggerApiDocumentation": "Swagger API documentation",
-        "flywayDatabaseMigrations": "Flyway database migrations",
-        "modularArchitectureByFeature": "Modular architecture by feature",
-        "secureTokenStorage": "Secure token storage",
-        "dockerizedDatabaseSetup": "Dockerized database setup",
-        "mobileFirstUserExperience": "Mobile-first user experience"
-      }
-    },
-    "escalaDoReino": {
-      "title": "Escala do Reino",
-      "shortDescription": "Church ministry scheduling platform designed to simplify team organization and service planning.",
-      "fullDescription": "Escala do Reino is a personal project designed to help churches organize ministry schedules, coordinate volunteer teams, and improve service planning. The platform focuses on providing a secure and scalable foundation through role-based access control, schedule management, and modern backend development practices built with Spring Boot.",
-      "features": {
-        "jwtAuthentication": "JWT authentication",
-        "roleBasedAccessControl": "Role-based access control",
-        "churchMinistryScheduling": "Ministry scheduling",
-        "memberTeamManagement": "Member and team management",
-        "calendarVisualization": "Calendar view",
-        "dashboardOverview": "Dashboard overview",
-        "restApiArchitecture": "REST API architecture",
-        "flywayDatabaseMigrations": "Flyway database migrations",
-        "dockerizedDatabaseSetup": "Dockerized database setup",
-        "swaggerApiDocumentation": "Swagger API documentation",
-        "layeredArchitecture": "Layered architecture",
-        "scalableBackendFoundation": "Scalable backend architecture"
-      }
-    },
-    "portfolio": {
-      "title": "Portfolio",
-      "shortDescription": "Personal developer portfolio showcasing projects, skills, and a custom CMS built with Spring Boot, Next.js, and React.",
-      "fullDescription": "This portfolio was designed to showcase my projects, technical skills, and approach to software development through a modern full-stack application. The frontend is built with Next.js and React, focusing on responsive design, reusable components, and user experience. The backend is being developed with Spring Boot using a modular monolith architecture, providing a custom CMS for managing portfolio content, authentication, and contact communication. The project emphasizes scalability, maintainability, and real-world software engineering practices.",
-      "features": {
-        "responsiveLandingPage": "Responsive design",
-        "reusableUiComponents": "Reusable UI components",
-        "projectsShowcaseSection": "Projects showcase",
-        "aboutSection": "About section",
-        "contactSection": "Contact section",
-        "modularMonolithBackendArchitecture": "Modular monolith backend architecture",
-        "restfulApiStructure": "RESTful API structure",
-        "jwtAuthenticationAndAuthorization": "JWT authentication and authorization",
-        "protectedAdminRoutes": "Protected admin routes",
-        "contactEmailService": "Contact email service",
-        "portfolioCmsManagement": "Portfolio CMS management",
-        "dynamicPortfolioContentManagement": "Dynamic content management",
-        "environmentBasedConfiguration": "Environment-based configuration",
-        "dockerizedApplicationSetup": "Dockerized deployment setup",
-        "scalableFrontendBackendStructure": "Scalable full-stack architecture"
-      }
     }
-  },
-
-  "Services": {
-    "title": "Services",
-    "description": "I help businesses and founders turn ideas and internal needs into working software — from a single API to a full product.",
-    "bullets": {
-      "apis": "APIs & backend systems built for reliability, security, and room to grow.",
-      "webApps": "Full-stack web systems, from internal tools to customer-facing platforms.",
-      "mvps": "MVPs that get a real product in front of real users, fast."
-    },
-    "process": {
-      "title": "How it works",
-      "step1": {
-        "title": "Briefing",
-        "description": "We talk through your goal, constraints, and what success looks like."
-      },
-      "step2": {
-        "title": "Proposal",
-        "description": "You get a clear scope, timeline, and price before anything starts."
-      },
-      "step3": {
-        "title": "Delivery",
-        "description": "I build, keep you updated, and hand off working, documented software."
-      }
-    },
-    "cta": "Request a Quote"
   },
 
   "Contact": {
@@ -208,13 +84,6 @@
     "form": {
       "name": "Name",
       "email": "Email",
-      "reason": "Reason for contact",
-      "reasonPlaceholder": "Select a reason",
-      "reasonOptions": {
-        "job": "Job opportunity",
-        "freelance": "Freelance project",
-        "other": "Other"
-      },
       "message": "Message",
       "button": "Send Message",
       "sending": "Sending...",

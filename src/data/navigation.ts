@@ -15,11 +15,6 @@ export const navItems = [
             section: "projects"
         },
         {
-            label: "services",
-            href: "#services",
-            section: "services"
-        },
-        {
             label: "contact",
             href: "#contact",
             section: "contact"

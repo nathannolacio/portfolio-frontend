@@ -11,7 +11,6 @@ export default function ContactSection() {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
-        reason: "",
         message: "",
     });
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -49,7 +48,6 @@ export default function ContactSection() {
             setFormData({
                 name: "",
                 email: "",
-                reason: "",
                 message: "",
             });
 
@@ -117,28 +115,6 @@ export default function ContactSection() {
                                 placeholder={t("form.emailPlaceholder")}
                                 className="rounded-sm border border-border bg-bg px-4 py-2 text-text placeholder-text-muted transition-colors focus:border-accent focus:outline-none"
                             />
-                        </div>
-
-                        <div className="flex flex-col gap-2 w-full">
-                            <label
-                                htmlFor="reason"
-                                className="text-sm font-semibold text-text"
-                            >
-                                {t("form.reason")}
-                            </label>
-                            <select
-                                id="reason"
-                                name="reason"
-                                value={formData.reason}
-                                onChange={handleChange}
-                                required
-                                className="rounded-sm border border-border bg-bg px-4 py-2 text-text transition-colors focus:border-accent focus:outline-none"
-                            >
-                                <option value="" disabled>{t("form.reasonPlaceholder")}</option>
-                                <option value="job">{t("form.reasonOptions.job")}</option>
-                                <option value="freelance">{t("form.reasonOptions.freelance")}</option>
-                                <option value="other">{t("form.reasonOptions.other")}</option>
-                            </select>
                         </div>
 
                         <div className="flex flex-col gap-2 w-full">

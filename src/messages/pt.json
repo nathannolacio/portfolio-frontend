@@ -3,7 +3,6 @@
     "home": "Início",
     "about": "Sobre",
     "projects": "Projetos",
-    "services": "Serviços",
     "contact": "Contato"
   },
 
@@ -13,9 +12,9 @@
       "word2": "Eu sou"
     },
     "title": "Transformo <highlight>problemas reais</highlight> em soluções de software.",
-    "description": "Desenvolvedor Full Stack. Seja como parte de um time, seja construindo do zero, meu trabalho é transformar a necessidade de um negócio em software funcionando.",
-    "contactButton": "Preciso de um Projeto",
-    "cvButton": "Ver Currículo"
+    "description": "Desenvolvedor Full Stack focado em construir aplicações escaláveis, com boa experiência de uso e impacto real.",
+    "contactButton": "Vamos Conversar",
+    "cvButton": "Baixar CV"
   },
 
   "About": {
@@ -25,7 +24,7 @@
     "highlights": {
       "role": "Full Stack",
       "focus": "Foco em backend & arquitetura",
-      "availability": "Aberto a vagas e freelance"
+      "availability": "Aberto a vagas CLT e PJ"
     },
 
     "whoIam": {
@@ -70,135 +69,12 @@
     "category": {
       "system": "Sistema",
       "cms": "CMS",
-      "landingPage": "Página de Vendas",
+      "landingPage": "Landing Page",
       "portfolio": "Portfólio",
       "dashboard": "Dashboard",
       "api": "API",
       "mobileApp": "Aplicativo Mobile"
-    },
-
-    "meuSaldo": {
-      "title": "Meu Saldo",
-      "shortDescription": "API de gerenciamento financeiro pessoal desenvolvida para auxiliar usuários no controle de transações e acompanhamento da saúde financeira.",
-
-      "fullDescription": "Meu Saldo é uma aplicação de gerenciamento financeiro pessoal que auxilia usuários na organização de suas finanças por meio do controle de transações, acompanhamento de saldo e gerenciamento de contas. O projeto busca proporcionar maior visibilidade financeira enquanto aplica boas práticas de desenvolvimento backend, incluindo autenticação segura, arquitetura escalável e código de fácil manutenção.",
-
-      "features": {
-        "transactionManagement": "Gerenciamento de transações",
-        "balanceCalculation": "Cálculo de saldo",
-        "userManagement": "Gerenciamento de usuários",
-        "bankAccountManagement": "Gerenciamento de contas bancárias",
-        "restApiArchitecture": "Arquitetura REST API",
-        "environmentBasedConfiguration": "Configuração por ambiente",
-        "layeredBackendArchitecture": "Arquitetura backend em camadas",
-        "jwtAuthenticationStructure": "Autenticação JWT",
-        "ciWorkflowIntegration": "Integração CI/CD"
-      }
-    },
-    "lottus": {
-      "title": "Lottus",
-      "shortDescription": "Plataforma de gerenciamento de bibliotecas acadêmicas desenvolvida com Clean Architecture, cache Redis e processamento assíncrono.",
-      "fullDescription": "Lottus é uma plataforma full stack de gerenciamento de bibliotecas acadêmicas desenvolvida com uma arquitetura backend escalável, focada em desempenho, manutenibilidade e separação de responsabilidades. O backend segue os princípios da Clean Architecture e integra cache Redis, processamento assíncrono com RabbitMQ, autenticação JWT e infraestrutura conteinerizada com Docker, aplicando práticas modernas de desenvolvimento inspiradas em ambientes corporativos.",
-      "features": {
-        "cleanArchitecture": "Clean Architecture",
-        "redisCacheLayer": "Camada de cache com Redis",
-        "jwtAuthentication": "Autenticação JWT",
-        "asynchronousFileProcessing": "Processamento assíncrono de arquivos",
-        "rabbitMqIntegration": "Integração com RabbitMQ",
-        "dockerizedInfrastructure": "Infraestrutura com Docker",
-        "swaggerApiDocumentation": "Documentação da API com Swagger",
-        "restApiArchitecture": "Arquitetura REST API",
-        "libraryLoanManagement": "Gerenciamento de empréstimos",
-        "digitalCatalogSystem": "Catálogo digital",
-        "studentClassManagement": "Gerenciamento de alunos e turmas"
-      }
-    },
-    "lottusMobile": {
-      "title": "Lottus Mobile",
-      "shortDescription": "Plataforma mobile de acompanhamento de leitura desenvolvida para pais e alunos.",
-      "fullDescription": "Lottus Mobile é uma plataforma full stack desenvolvida para auxiliar pais no acompanhamento das atividades de leitura escolar de seus filhos. O projeto combina uma API segura desenvolvida com Spring Boot e um aplicativo mobile construído com React Native, com foco em segurança de autenticação, arquitetura modular e experiências escaláveis voltadas para dispositivos móveis.",
-      "features": {
-        "mobileApplicationForParents": "Aplicativo mobile para pais",
-        "jwtAuthentication": "Autenticação JWT",
-        "googleOauth2Login": "Login com Google OAuth2",
-        "refreshTokenRotation": "Refresh Token",
-        "loanManagement": "Gerenciamento de empréstimos",
-        "studentEnrollmentValidation": "Validação de matrícula",
-        "swaggerApiDocumentation": "Documentação da API com Swagger",
-        "flywayDatabaseMigrations": "Migrações de banco com Flyway",
-        "modularArchitectureByFeature": "Arquitetura modular por funcionalidade",
-        "secureTokenStorage": "Armazenamento seguro de tokens",
-        "dockerizedDatabaseSetup": "Banco de dados com Docker",
-        "mobileFirstUserExperience": "Experiência mobile-first"
-      }
-    },
-    "escalaDoReino": {
-      "title": "Escala do Reino",
-      "shortDescription": "Plataforma de gerenciamento ministerial desenvolvida para simplificar a organização de equipes e o planejamento de escalas.",
-      "fullDescription": "Escala do Reino é um projeto pessoal criado para auxiliar igrejas na organização de escalas ministeriais, coordenação de equipes voluntárias e planejamento de cultos e eventos. A plataforma é focada em segurança, escalabilidade e boas práticas de desenvolvimento backend, utilizando controle de acesso por funções, gerenciamento de escalas e uma arquitetura moderna baseada em Spring Boot.",
-      "features": {
-        "jwtAuthentication": "Autenticação JWT",
-        "roleBasedAccessControl": "Controle de acesso por funções",
-        "churchMinistryScheduling": "Gerenciamento de escalas ministeriais",
-        "memberTeamManagement": "Gerenciamento de membros e equipes",
-        "calendarVisualization": "Visualização em calendário",
-        "dashboardOverview": "Dashboard gerencial",
-        "restApiArchitecture": "Arquitetura REST API",
-        "flywayDatabaseMigrations": "Migrações de banco com Flyway",
-        "dockerizedDatabaseSetup": "Banco de dados com Docker",
-        "swaggerApiDocumentation": "Documentação da API com Swagger",
-        "layeredArchitecture": "Arquitetura em camadas",
-        "scalableBackendFoundation": "Arquitetura backend escalável"
-      }
-    },
-    "portfolio": {
-      "title": "Portfolio",
-      "shortDescription": "Portfólio profissional desenvolvido para apresentar projetos, habilidades e um CMS customizado construído com Spring Boot, Next.js e React.",
-      "fullDescription": "Este portfólio foi desenvolvido para apresentar meus projetos, habilidades técnicas e abordagem de desenvolvimento de software por meio de uma aplicação full stack moderna. O frontend foi construído com Next.js e React, priorizando responsividade, componentes reutilizáveis e experiência do usuário. O backend está sendo desenvolvido com Spring Boot utilizando uma arquitetura de monólito modular, oferecendo um CMS customizado para gerenciamento de conteúdo, autenticação e comunicação através do formulário de contato. O projeto tem como foco escalabilidade, manutenibilidade e boas práticas de engenharia de software.",
-      "features": {
-        "responsiveLandingPage": "Design responsivo",
-        "reusableUiComponents": "Componentes reutilizáveis",
-        "projectsShowcaseSection": "Seção de projetos",
-        "aboutSection": "Seção sobre mim",
-        "contactSection": "Seção de contato",
-        "modularMonolithBackendArchitecture": "Arquitetura de monólito modular",
-        "restfulApiStructure": "Estrutura de API RESTful",
-        "jwtAuthenticationAndAuthorization": "Autenticação e autorização JWT",
-        "protectedAdminRoutes": "Rotas administrativas protegidas",
-        "contactEmailService": "Serviço de envio de e-mails",
-        "portfolioCmsManagement": "Gerenciamento via CMS",
-        "dynamicPortfolioContentManagement": "Gerenciamento dinâmico de conteúdo",
-        "environmentBasedConfiguration": "Configuração por ambiente",
-        "dockerizedApplicationSetup": "Implantação com Docker",
-        "scalableFrontendBackendStructure": "Arquitetura full stack escalável"
-      }
     }
-  },
-
-  "Services": {
-    "title": "Serviços",
-    "description": "Ajudo empresas e founders a transformar ideias e necessidades internas em software funcionando — de uma API única a um produto completo.",
-    "bullets": {
-      "apis": "APIs e sistemas backend construídos para confiabilidade, segurança e escalabilidade.",
-      "webApps": "Sistemas web full-stack, de ferramentas internas a plataformas voltadas ao cliente.",
-      "mvps": "MVPs que colocam um produto real na mão de usuários reais, rapidamente."
-    },
-    "process": {
-      "title": "Como funciona",
-      "step1": {
-        "title": "Briefing",
-        "description": "Conversamos sobre seu objetivo, restrições e o que significa sucesso para o projeto."
-      },
-      "step2": {
-        "title": "Proposta",
-        "description": "Você recebe escopo, prazo e valor claros antes de qualquer início."
-      },
-      "step3": {
-        "title": "Entrega",
-        "description": "Eu desenvolvo, mantenho você atualizado e entrego software funcionando e documentado."
-      }
-    },
-    "cta": "Solicitar Orçamento"
   },
 
   "Contact": {
@@ -208,13 +84,6 @@
      "form": {
       "name": "Nome",
       "email": "E-mail",
-      "reason": "Motivo do contato",
-      "reasonPlaceholder": "Selecione um motivo",
-      "reasonOptions": {
-        "job": "Vaga / oportunidade de emprego",
-        "freelance": "Projeto freelance",
-        "other": "Outro"
-      },
       "message": "Mensagem",
       "button": "Enviar Mensagem",
       "sending": "Enviando...",

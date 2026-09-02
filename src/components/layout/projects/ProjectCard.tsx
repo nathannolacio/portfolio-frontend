@@ -34,15 +34,15 @@ export default function ProjectCard({
 
         <div className="relative flex items-center justify-center h-42 bg-surface-2 rounded-sm overflow-hidden border border-border">
             {preview ? (
-                <Image src={preview} alt={t(title)} fill className="object-cover" />
+                <Image src={preview} alt={title} fill className="object-cover" />
                 ) : (
                 <FaRegImage className="text-4xl text-text-muted" />
             )}
         </div>
 
         <div className="flex-1">
-            <h3 className="font-display font-medium text-lg mb-2">{t(title)}</h3>
-            <p className="text-text-muted text-sm">{t(shortDescription)}</p>
+            <h3 className="font-display font-medium text-lg mb-2">{title}</h3>
+            <p className="text-text-muted text-sm">{shortDescription}</p>
         </div>
 
         <div className="mt-auto">

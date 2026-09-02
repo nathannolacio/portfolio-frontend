@@ -64,3 +64,4 @@ pnpm-debug.log*
 
 # generated files
 dist/
+.neon
